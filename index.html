@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--  debut code pour google Analyticse suivi Global Site Tag (gtag.js)   -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128909235-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128909235-1');
+</script>
+<!--  fin du code pour google Analyticse suivi Global Site Tag (gtag.js)   -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="GI7gh5-3TPeJio2hbhZYMDC9EFf7m2HgyzfJwWLZfnA" />
+<title>Le site du Cava de Cébazat</title>
+<link href="css/feuille_style.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript">
+
+
+  <!--debut de la fonction date heure -->
+
+function date_heure(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat = 'Nous sommes le '+jours[jour]+' '+j+' '+mois[moi]+' '+annee+' il est '+h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                        
+                         
+                         <!--fin de la fonction date heure -->
+						 
+						 
+						 
+						 
+						  <!--debut de la fonction  heure -->
+
+function date_heure2(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat ='&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure2("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                
+                         
+                        
+                         
+                         <!--fin de la fonction heure  -->
+
+ <!--debut de la fonction  mois -->
+
+  function date_heure1(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat =mois[moi];
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure1("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                        
+                         
+              
+                         
+                        
+                         
+                         <!--fin de la fonction mois -->
+						 
+						 
+ <!--debut de la fonction jour -->
+
+function date_heure3(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat = j;
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure3("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                        
+                         
+                         <!--fin de la fonction jour-->
+						 
+						 
+
+
+
+
+
+
+
+
+
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/boutons_survol/liens_survole.gif','images/navigation_2015/membres_survole.png','images/navigation_2015/le_cava_survole.png','images/navigation_2015/presse_survole.png','images/navigation_2015/reportage_survole.png','images/navigation_2015/bon_plan_survole.png','images/navigation_2015/prets_survole.png')">
+<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+  <tr>
+    <td ><div align="center"><table width="901" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="6" align="center"><table width="901" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="900" height="120" rowspan="2" align="left" valign="top"><div align="center"><img src="images/Banniere/banniere-cava-010.jpg" alt="banniere" width="900" height="120" /></div>              </td>
+          </tr>
+          
+          
+        </table>
+          <div align="center"><img src="images/generique/pixel.gif" alt="pixel" width="901" height="10" /><br />
+          </div></td>
+        </tr>
+      <tr>
+        <td colspan="6" bgcolor="#999999"><img src="images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+        </tr>
+      <tr>
+        <td colspan="6"><div align="left"><span class="style5">Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</span></div></td>
+      </tr>
+        
+      
+      <tr>
+        <td width="150" align="center" valign="top">
+            <table width="150" border="0" cellspacing="5" cellpadding="0">
+              <tr>
+                <td width="150" height="5"><div align="center"><img src="images/generique/pixel.gif" alt="pixel" width="1" height="1" /><img src="images/generique/pixel.gif" alt="pixel" width="1" height="10" /></div></td>
+              </tr>
+              <tr>
+                 <td height="5"><div align="center"><a href="#"><img src="images/accueil/medaille-100p.jpg" alt="medaille" width="100" height="97" border="0" onclick="MM_openBrWindow('../images/accueil/medaille.jpg','','width=450,height=450')" /></a></div></td>
+              </tr>
+              
+              <tr>
+                <td width="150">&nbsp;</td>
+              </tr>
+              
+              
+              <tr>
+                <td><img src="images/navigation_2015/accueil_survole.png" alt="accueil" width="150" height="50" border="0" /></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="html/membres.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('membres','','images/navigation_2015/membres_survole.png',1)"><img src="images/navigation_2015/membres.png" alt="les membres du CAVA" name="membres" width="150" height="50" border="0" id="membres" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="html/le_cava.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lecava','','images/navigation_2015/le_cava_survole.png',1)"><img src="images/navigation_2015/le_cava.png" alt="Historique du CAVA" name="lecava" width="150" height="50" border="0" id="lecava" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="html/presse.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('presse','','images/navigation_2015/presse_survole.png',1)"><img src="images/navigation_2015/presse.png" alt="La revue de presse du CAVA" name="presse" width="150" height="50" border="0" id="presse" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="html/reportage.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('reportage','','images/navigation_2015/reportage_survole.png',1)"><img src="images/navigation_2015/reportage.png" alt="Les reportages du CAVA" name="reportage" width="150" height="50" border="0" id="reportage" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="html/pretdivers.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('pret_divers','','images/navigation_2015/prets_survole.png',1)"><img src="images/navigation_2015/prets.png" alt="Les prêts du CAVA" name="pret_divers" width="150" height="50" border="0" id="pret_divers" /></a></td>
+              </tr>
+              <tr>
+              
+              
+                <td width="150"><a href="html/bons_plans_accueil.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('bons_plans','','images/navigation_2015/bon_plan_survole.png',1)"><img src="images/navigation_2015/bon_plan.png" alt="Les bons plans du CAVA" name="bons_plans" width="150" height="50" border="0" id="bons_plans" /></a></td>
+                
+                
+              </tr>
+            </table>
+            <div id="menu_lecava">
+              <p>Vous êtes le</p>
+              <p><font size="2" face="trebuchet ms, Arial, Helvetica" class="Style4"><img src="http://pages.perso.orange.fr/client/php/compteur.php?url=cava.cebazat&amp;df=45&amp;dd=B&amp;frgb=black&amp;tr=n&amp;md=5&amp;pad=y&amp;comma=n" alt="compteur" /></font></p>
+              <p>visiteur<br /> 
+                depuis<br /> 
+                le 25/11/2006</p>
+             
+                
+                
+                
+              <p><a href="html/formail2.html"><img src="images/generique/logo_email_002.gif" alt="email" width="96" height="67" border="0" /></a></p>
+              <p>nous contacter</p>
+              <p>&nbsp;<a href="html/plan_du_site.html">plan du site</a> </p>
+            </div>
+            
+            
+            
+            
+            
+            <p>
+            
+            <div style="background-color:#33ff33;color:#ffffff;font-family:Verdana,Arial,Tahoma,Times New Roman;font-weight:bold;font-size:10px;width:120px;text-align:center"><a href="http://www.meteo24.fr/fr/home/meteo-france-et-europe/temps-dans-le-monde/temps-des-villes/ville/33X5739/cebazat.html" target="_blank" style="color:#ffffff;font-family:Verdana,Arial,Tahoma,Times New Roman;font-weight:bold;font-size:10px;padding:0;background:none" title="Detailed weather forecast for Météo Cébazat">Météo  Les Vergers d’Aubeterre Cébazat</a></div><iframe width="120" height="127" scrolling="no" frameborder="0" src="http://www.meteo24.fr/meteo/hptool/index.php?cid=33X5739&cityName=C%26eacute%3Bbazat&l=fr&style=1&v=fr&ver=2&c1=ffffff&c2=33ff33&c3=33ff33&c4=ffffff&c5=102840&c6=ffffff&c7=33ff33&f1a=1&f1b=2&f2a=1&f2b=1&f3a=1&f3b=1&ct1=1&ct2=2&ct3=6&ct4=10&ct5=0&fcd=0"></iframe><div style="height:14px;width:120px;text-align:center;background-color:#f8b920"><a href="http://www.meteo24.fr/" target="_blank" style="background:none;padding:0;text-decoration:none;color:#000000;font-family:Verdana,Arial,Tahoma,Times New Roman;font-weight:bold;font-size:10px" title="Latest weather observations and 14 day forecasts for over 2 MM locations worldwide">&copy; meteo24.fr</a></div>
+            
+            
+             </p>          
+             
+               </td>
+            
+            
+            
+            
+        <td width="10" rowspan="2" align="left"><img src="images/generique/pixel.gif" alt="pixel" width="10" height="1" /></td>
+        
+        
+        <td colspan="3" rowspan="2" align="center" valign="top"><img src="images/generique/pixel.gif" alt="pixel" width="358" height="1" />          
+            <table width="738" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="10" colspan="3" align="right" valign="bottom"><img src="images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+                </tr>
+              <tr>
+               <!--  <td width="12" height="12" align="right" valign="bottom"><img src="images/cadre_principal/coin_gauche_haut.gif" alt="coin gauche droit" width="12" height="12" /></td>-->
+                <td height="12" align="center" valign="bottom" class="bord_haut"></td>
+               <!-- <td width="12" height="12" align="left" valign="bottom"><img src="images/cadre_principal/coin_droit_haut.gif" alt="coin droite haut" width="12" height="12" /></td>
+              </tr>-->
+              <tr>
+                <td width="12" align="right" valign="middle" class="bord_gauche">&nbsp;</td>
+                <td valign="top">
+                  
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr valign="top">
+                      <td width="10"><img src="images/generique/pixel.gif" alt="pixel" width="10" height="1" /></td>
+                      <td ><img src="images/generique/pixel.gif" alt="pixel" width="10" height="1" />
+                      
+                      
+                      
+                        <div id="bloc_gauche">
+                         <div id="bloc_gauche_agenda">
+                         
+                  
+                         
+                         <!--debut fonction heure mois jour -->
+            
+  <!--heure -->                       
+<span class="nav2" id="date_heure2">
+<script type="text/javascript">window.onload = date_heure2('date_heure2');</script>
+                       </span>  
+<!--mois -->
+<span class="nav1" id="date_heure1">
+<script type="text/javascript">window.onload = date_heure1('date_heure1');</script>
+                       </span>  
+ <!--jour -->                      
+                       <span class="nav3" id="date_heure3">
+<script type="text/javascript">window.onload = date_heure3('date_heure3');</script>
+                       </span>  
+                      
+
+                         <!-- fin de fonction heure mois jour-->
+                        
+                      
+
+
+ <br />
+  <br />
+   <br />
+    <br />
+     <br />
+                       
+                        <ul>
+                        
+                        
+                        
+                        
+                
+                
+                
+                                
+                         
+                      
+                              
+                              
+                              <br />
+                              
+                              
+                              
+                                 <li><strong class="titre_reportages"> janvier 2019 </strong> 
+                                       <br /> 
+                                  <br />
+                                          <img src="images/accueil/annee2019.jpg" alt="bonne annee" width="200" height="145" border="0" />                                  
+                                       <br />
+                                     <p> 
+                                         Pour cette nouvelle année, tous les
+                                             membres du bureau du CAVA Cébazat
+                                             sont heureux de vous présenter <strong>leurs
+                                             meilleurs voeux </strong>de bonheur et de
+                                             santé pour 2019.<br /> 
+                                             Au plaisir de vous
+                                             retrouver lors d'une prochaine animation.<br />
+                                              BRUN Serge (Président CAVA Cébazat)                                    </p>
+                                           <br />
+                              </li>  
+                                      
+                            
+                              
+                             
+                              <li><strong class="titre_reportages"> dimanche
+                                      20 janvier 2019 </strong> 
+                                       <br /> 
+                                  <br />
+                                          <img src="images/accueil/galette_2019.gif" alt="35 ans_2018" width="200" height="192" border="0" />                                  
+                                       <br />
+                                     <p align="center"> 
+                                         A tous les adhérents :
+Le CAVA vous offre <strong>la galette</strong> et une rétrospective photos de l'année écoulée.<br />
+Tous les adhérents sont invités à participer à la <strong>"galette des Rois"</strong><br /> 
+<strong>dimanche
+20 janvier 2019 à 15h30<br />
+</strong>à la salle J. Prugnard.<br />
+Une inscription préalable à notre local nous permettra de commander le nombre
+de galettes adapté.                                    </p>
+                                           <br />
+                              </li>  
+                              
+                              
+                             
+                              
+                              
+                              
+                              
+                                <br />
+                                      
+                              <li><strong class="titre_reportages"> jeudi 24 janvier 2019 </strong> 
+                                       <br /> 
+                                  <br />
+                                          <img src="images/accueil/ag-2019.jpg" alt="35 ans_2018" width="200" height="142" border="0" />                                  
+                                    <br />
+                                     <p> 
+                                        Tous les adhérents sont  invités
+                                         à participer à<strong> l'assemblée générale</strong> du CAVA Cébazat prévue le jeudi 24 janvier 2019 à Sémaphore à 20 h 30.                                 </p>
+                                  <br />
+                              </li>  
+                         </ul> 
+                         </div> 
+                         
+                         
+                      
+                         
+                         
+                         
+                        
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                      
+                            
+                        
+                        
+                        
+                            
+                            
+                            
+                        
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                         
+                         
+                         
+                              
+                            
+                            
+                            
+                         
+                        
+                        
+                        
+                         
+                         
+                         
+                         
+                           
+                            
+                            
+                            
+                           
+                            
+                            
+                            
+                            
+                            
+                          
+                            
+                          
+                          
+                            
+                            
+                          
+                          <p>&nbsp;</p>
+                          <p> <a href="html/boncoincava.html"><img src="images/boincoincava/le_bon_coin_annonce_300p.jpg" alt="le bon coin" width="300" height="72" /></a><br />
+                                          <a href="#"><img src="images/boincoincava/cetelem-seul_web_001_200pl.jpg" alt="35 ans_2018" width="200" height="283" border="0" onclick="MM_openBrWindow('images/boincoincava/cetelem-seul_web_001_600ph.jpg','cetelem','')" /></a>                                  
+                                      
+                            <p> 
+                            <a href="html/boncoincava.html">A vendre</a>                                   </p>
+                                           <br /></p>
+                          <p>&nbsp;</p>
+                        </div>                                               </td>
+                      
+                      <td >
+                      <div id="bloc_droit">
+                      
+                      
+                      
+                        <h2>   Visites du Père Noël 2018 </h2>
+                          <p><a href="#"><img src="diaporama/2018/perenoel/images/fulls/miniature.jpg" alt="cava" width="200" height="257" border="0" onclick="MM_openBrWindow('diaporama/2018/perenoel/images/fulls/01.jpg','huitres','')" /></a><br />
+                       To-toc !... C’est<strong> le Père-Noël </strong>!...<br /> 
+                       Les enfants ont-ils été sages ?<br /> 
+                       Eh bien, oui… alors je leurs apporte quelques jouets pour les récompenser de leur gentillesse… <br />
+                          
+                             <a href="html/reportage_2018.html#perenoel" target="_blank">Suite et Photos</a> <br />
+                          </p>
+                            <br />
+                      
+                      
+                      
+                      
+                         <h2>   Huîtres de Noël décembre 2018 </h2>
+                          <p><a href="#"><img src="diaporama/2018/huitres/images/fulls/miniature.jpg" alt="cava" width="200" height="170" border="0" onclick="MM_openBrWindow('diaporama/2018/huitres/images/fulls/01.jpg','huitres','')" /></a><br />
+                        Avec l’arrivée des fêtes de fin d’année, il faut se préparer à<strong> d’agréables bombances</strong> et un petit festin d’entrainement a été, comme chaque année, absolument nécessaire...<br />
+                          
+                             <a href="html/reportage_2018.html#huitres" target="_blank">Suite et Photos</a> <br />
+                          </p>
+                            <br />
+                      
+                      
+                      
+                         <h2>   Voisinades novembre 2018 </h2>
+                          <p><a href="#"><img src="diaporama/2018/voisinades/images/vignette_014.jpg" alt="cava" width="200" height="113" border="0" onclick="MM_openBrWindow('diaporama/2018/voisinades/images/2018_11_Voisinades_014.jpg','voisinades','')" /></a><br />
+                         Tradition oblige, nous avons proposé vendredi 16.11 la dégustation d<strong>’une bonne truffade</strong>…<br /> 
+                         Concoctée par un traiteur local, nous avons apprécié la présentation de la salle particulièrement soignée et, après un apéritif des plus amicaux, c’est avec très bon appétit que les nombreux convives ont partagé ce délicieux repas d’un soir.   <br />
+                            <a href="html/reportage_2018.html#vosinades" target="_blank">Suite et Photos</a> <br />
+                          </p>
+                            <br />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                         <h2>   Randonnée Riom novembre 2018 </h2>
+                          <p><a href="#"><img src="diaporama/2018/balade_riom/images/vignette_001.jpg" alt="cava" width="200" height="144" border="0" onclick="MM_openBrWindow('diaporama/2018/balade_riom/images/2018_11_Balade_Riom_001.jpg','','width=800,height=600')" /></a><br />
+                          En ce jeudi 8 novembre, nous nous dirigeons vers la chapelle<strong> St DON</strong> à Riom pour une promenade de 8,5 kms…<br /> 
+                          Le temps est magnifique mais les courageux ne sont pas nombreux !...   <br />
+                            <a href="html/reportage_2018.html#balade_riom" target="_blank"> Suite et Photos</a> <br />
+                            
+                          </p>
+                            <br />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                         <h2>
+                         
+                        Halloween octobre 2018 </h2>
+                          <p><a href="#"><img src="diaporama/2018/Halloween/images/vignette_001.jpg" alt="halloween" width="300" height="147" border="0" onclick="MM_openBrWindow('diaporama/2018/Halloween/images/2018_10_Halloween_001.jpg','','width=800,height=600')" /></a><br />
+                            Comme chaque année, les enfants étaient nombreux pour recevoir <strong>les friandises</strong> des adhérents du lotissement.<br /> 
+                            Les <strong>déguisements</strong>, adaptés à tous les âges, faisaient peur à toutes et tous mais la ferveur des confiseries déposées dans deux maxi brouettes ont motivées même les plus petits.  <br />
+                            <a href="html/reportage_2018.html#halloween" target="_blank"> Suite et Photos</a> <br />
+                            
+                          </p>
+                            <br />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                         <h2>
+                        35eme Anniversaire du CAVA octobre 2018 </h2>
+                          <p><a href="#"><img src="diaporama/2018/anniversaire_35ans/images/vignette_225.jpg" alt="35anniversaire" width="200" height="122" border="0" onclick="MM_openBrWindow('diaporama/2018/anniversaire_35ans/images/2018_10_Anniversaire_35ans_Cava_225.jpg','','width=800,height=600')" /></a><br />
+                             <strong>35 ans</strong> et toujours opérationnel !... <br />
+                             Qui aurait cru une telle longévité depuis la création du <strong>CAVA</strong> en 1983 !...<br /> 
+                             Nous sommes toujours présents et c'est avec un <strong>enthousiasme</strong> de jeunesse que plus de quatre-vingt dix personnes se sont investies dans la présentation de ce spectacle original mis en scène à Sémaphore le 6/10/2018. <br />
+                            <a href="html/reportage_2018.html#35ans" target="_blank"> Suite et Photos</a> <br />
+                            
+                          </p>
+                            <br />
+                      
+                      
+                     
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                     
+                     
+                            
+                            
+                            
+                          
+                            
+                            
+                            
+                              <br />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                            
+                         
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                     
+                      
+                      
+                      
+                      
+                      
+                     
+                         
+                          
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                        <br />
+                      
+                          
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <br />
+                          </div>
+   
+   
+   
+   
+   
+   
+   
+   
+                        <p>&nbsp;</p></td>
+                      <td width="10"><img src="images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+                    </tr>
+                  </table>                  </td>
+                <td width="12" align="left" valign="middle" class="bord_droit">&nbsp;</td>
+              </tr>
+              <tr>
+               <!-- <td width="12" height="12" align="right" valign="top"><img src="images/cadre_principal/coin_gauche_bas.gif" alt="coin bas gauche" width="12" height="12" /></td>
+               -->
+                <td height="12" align="center" valign="top" class="bord_bas">&nbsp;</td>
+               <!-- <td width="12" height="12" align="left" valign="top"><img src="images/cadre_principal/coin_droit_bas.gif" alt="coin droite bas" width="12" height="12" /></td>
+               
+               -->
+              </tr>
+              </table>            
+            <p class="style5"></p></td>
+        <td rowspan="2"><img src="images/generique/pixel.gif" alt="pixel" width="10" height="300" /></td>
+      </tr>
+      
+      <tr>
+        <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="Style4_centre">
+            <tr valign="top">
+              <td><p> <br />
+Mise à jour : <br />
+7 janvier 2019 à 9:53<br />
+              </p>                </td>
+            </tr>
+          </table>          </td>
+        </tr>
+      <tr>
+        <td colspan="6" bgcolor="#666666"><img src="images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+      </tr>
+      <tr>
+        <td colspan="6">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="6"><div align="center">© 2009 Comité d'Animation des Vergers d'Aubeterre</div></td>
+      </tr>
+      <tr><td height="3"></td><td></td><td width="258"></td><td width="1"></td><td width="548"></td><td></td></tr>
+    </table>
+      </div>
+</td>
+  </tr>
+</table>
+</body>
+</html>
