@@ -302,6 +302,7 @@ p
 	border-bottom-width: medium;
 	border-left-width: medium;
 	background-color: #E5FFE5;
+	color: #34403A;
 	
 	
 	
@@ -331,9 +332,12 @@ a {
 	color: #329C35;
 }
 
+
+/* Mettre une image avant le texte comme une puce */
+
 h2:before {
 
-	content: url(../images/generique/puce_15x15.gif);  /* Mettre une image avant le texte comme une puce */
+	content: url(../images/generique/puce_15x15.gif);  
 	padding-right: 5px;	
 }
 
