@@ -238,6 +238,20 @@
 	border-bottom-style: none;
 	border-left-style: none;
 }
+
+.image_float_gauche {
+	float: left;
+	margin: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+
+
+
+
 #report_2010_corps {
 	padding: 10px;
 }
