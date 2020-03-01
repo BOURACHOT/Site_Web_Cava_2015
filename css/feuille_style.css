@@ -241,7 +241,7 @@
 
 .image_float_gauche {
 	float: left;
-	margin: 0px;
+	margin: 5px;
 	border-top-style: none;
 	border-right-style: none;
 	border-bottom-style: none;
