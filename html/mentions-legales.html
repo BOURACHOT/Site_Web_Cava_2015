@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<!--  debut code pour ajout de favicon   -->
+    <link rel="shortcut icon" href="../images/generique/icone_pomme.ico"/>
+    <link rel="apple-touch-icon" href="../images/generique/icone_pomme.ico"/>
+<!--  fin du code pour ajout de favicon   -->
+
+<!--  debut code pour google Analyticse suivi Global Site Tag (gtag.js)   -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128909235-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128909235-1');
+</script>
+<!--  fin du code pour google Analyticse suivi Global Site Tag (gtag.js)   -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="GI7gh5-3TPeJio2hbhZYMDC9EFf7m2HgyzfJwWLZfnA" />
+<title>Le site du Cava de Cébazat</title>
+<link href="../css/feuille_style.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript">
+
+
+  <!--debut de la fonction date heure -->
+
+function date_heure(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat = 'Nous sommes le '+jours[jour]+' '+j+' '+mois[moi]+' '+annee+' il est '+h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                        
+                         
+                         <!--fin de la fonction date heure -->
+						 
+						 
+						 
+						 
+						  <!--debut de la fonction  heure -->
+
+function date_heure2(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat ='&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +'&nbsp' +h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure2("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                
+                         
+                        
+                         
+                         <!--fin de la fonction heure  -->
+
+ <!--debut de la fonction  mois -->
+
+  function date_heure1(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat =mois[moi];
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure1("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                        
+                         
+              
+                         
+                        
+                         
+                         <!--fin de la fonction mois -->
+						 
+						 
+ <!--debut de la fonction jour -->
+
+function date_heure3(id)
+{
+        date = new Date;
+        annee = date.getFullYear();
+        moi = date.getMonth();
+        mois = new Array('Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre');
+        j = date.getDate();
+        jour = date.getDay();
+        jours = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        resultat = j;
+        document.getElementById(id).innerHTML = resultat;
+        setTimeout('date_heure3("'+id+'");','1000');
+        return true;
+}
+
+
+                         
+                        
+                         
+                         <!--fin de la fonction jour-->
+						 
+						 
+
+
+
+
+
+
+
+
+
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('../images/boutons_survol/liens_survole.gif','../images/navigation_2015/membres_survole.png','../images/navigation_2015/le_cava_survole.png','../images/navigation_2015/presse_survole.png','../images/navigation_2015/reportage_survole.png','../images/navigation_2015/bon_plan_survole.png','../images/navigation_2015/prets_survole.png')">
+<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+  <tr>
+    <td ><div align="center"><table width="901" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="6" align="center"><table width="901" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="900" height="120" rowspan="2" align="left" valign="top"><div align="center"><img src="../images/Banniere/banniere-cava-010.jpg" alt="banniere" width="900" height="120" /></div>              </td>
+          </tr>
+          
+          
+        </table>
+          <div align="center"><img src="../images/generique/pixel.gif" alt="pixel" width="901" height="10" /><br />
+          </div></td>
+        </tr>
+      <tr>
+        <td colspan="6" bgcolor="#999999"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+        </tr>
+      <tr>
+        <td colspan="6"><div align="left"><span class="style5">Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</span></div></td>
+      </tr>
+        
+      
+      <tr>
+        <td width="150" align="center" valign="top">
+            <table width="150" border="0" cellspacing="5" cellpadding="0">
+              <tr>
+                <td width="150" height="5"><div align="center"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="10" /></div></td>
+              </tr>
+              <tr>
+                 <td height="5"><div align="center"><a href="#"><img src="../images/accueil/medaille-100p.jpg" alt="medaille" width="100" height="97" border="0" onclick="MM_openBrWindow('file:///D|/onedrive/Sites web/images/accueil/medaille.jpg','','width=450,height=450')" /></a></div></td>
+              </tr>
+              
+              <tr>
+                <td width="150">&nbsp;</td>
+              </tr>
+              
+              
+              <tr>
+                <td><img src="../images/navigation_2015/accueil_survole.png" alt="accueil" width="150" height="50" border="0" /></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="membres.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('membres','','../images/navigation_2015/membres_survole.png',1)"><img src="../images/navigation_2015/membres.png" alt="les membres du CAVA" name="membres" width="150" height="50" border="0" id="membres" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="le_cava.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lecava','','../images/navigation_2015/le_cava_survole.png',1)"><img src="../images/navigation_2015/le_cava.png" alt="Historique du CAVA" name="lecava" width="150" height="50" border="0" id="lecava" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="presse.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('presse','','../images/navigation_2015/presse_survole.png',1)"><img src="../images/navigation_2015/presse.png" alt="La revue de presse du CAVA" name="presse" width="150" height="50" border="0" id="presse" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="reportage.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('reportage','','../images/navigation_2015/reportage_survole.png',1)"><img src="../images/navigation_2015/reportage.png" alt="Les reportages du CAVA" name="reportage" width="150" height="50" border="0" id="reportage" /></a></td>
+              </tr>
+              <tr>
+                <td width="150"><a href="pretdivers.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('pret_divers','','../images/navigation_2015/prets_survole.png',1)"><img src="../images/navigation_2015/prets.png" alt="Les prêts du CAVA" name="pret_divers" width="150" height="50" border="0" id="pret_divers" /></a></td>
+              </tr>
+              <tr>
+              
+              
+                <td width="150"><a href="bons_plans_accueil.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('bons_plans','','../images/navigation_2015/bon_plan_survole.png',1)"><img src="../images/navigation_2015/bon_plan.png" alt="Les bons plans du CAVA" name="bons_plans" width="150" height="50" border="0" id="bons_plans" /></a></td>
+                
+                
+              </tr>
+            </table>
+            <div id="menu_lecava">
+             
+             
+                
+                
+                
+              <p><a href="formail2.html"><img src="../images/generique/logo_email_002.gif" alt="email" width="96" height="67" border="0" /></a></p>
+              <p>nous contacter</p>
+              <p>&nbsp;<a href="plan_du_site.html">plan du site</a> </p>
+            </div>
+            
+            
+            
+            
+            
+            <p>
+            
+            <div style="background-color:#33ff33;color:#ffffff;font-family:Verdana,Arial,Tahoma,Times New Roman;font-weight:bold;font-size:10px;width:120px;text-align:center"><a href="http://www.meteo24.fr/fr/home/meteo-france-et-europe/temps-dans-le-monde/temps-des-villes/ville/33X5739/cebazat.html" target="_blank" style="color:#ffffff;font-family:Verdana,Arial,Tahoma,Times New Roman;font-weight:bold;font-size:10px;padding:0;background:none" title="Detailed weather forecast for Météo Cébazat">Météo  Les Vergers d’Aubeterre Cébazat</a></div><iframe width="120" height="127" scrolling="no" frameborder="0" src="http://www.meteo24.fr/meteo/hptool/index.php?cid=33X5739&cityName=C%26eacute%3Bbazat&l=fr&style=1&v=fr&ver=2&c1=ffffff&c2=33ff33&c3=33ff33&c4=ffffff&c5=102840&c6=ffffff&c7=33ff33&f1a=1&f1b=2&f2a=1&f2b=1&f3a=1&f3b=1&ct1=1&ct2=2&ct3=6&ct4=10&ct5=0&fcd=0"></iframe><div style="height:14px;width:120px;text-align:center;background-color:#f8b920"><a href="http://www.meteo24.fr/" target="_blank" style="background:none;padding:0;text-decoration:none;color:#000000;font-family:Verdana,Arial,Tahoma,Times New Roman;font-weight:bold;font-size:10px" title="Latest weather observations and 14 day forecasts for over 2 MM locations worldwide">&copy; meteo24.fr</a></div>
+            
+            
+             </p>          
+             
+               </td>
+            
+            
+            
+            
+        <td width="10" rowspan="2" align="left"><img src="../images/generique/pixel.gif" alt="pixel" width="10" height="1" /></td>
+        
+        
+        <td colspan="3" rowspan="2" align="center" valign="top"><img src="../images/generique/pixel.gif" alt="pixel" width="358" height="1" />          
+            <table width="738" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="10" colspan="3" align="right" valign="bottom"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+                </tr>
+              <tr>
+               <!--  <td width="12" height="12" align="right" valign="bottom"><img src="images/cadre_principal/coin_gauche_haut.gif" alt="coin gauche droit" width="12" height="12" /></td>-->
+                <td height="12" align="center" valign="bottom" class="bord_haut"></td>
+               <!-- <td width="12" height="12" align="left" valign="bottom"><img src="images/cadre_principal/coin_droit_haut.gif" alt="coin droite haut" width="12" height="12" /></td>
+              </tr>-->
+              <tr>
+                <td width="12" align="right" valign="middle" class="bord_gauche">&nbsp;</td>
+                <td valign="top">
+                  
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr valign="top">
+                      <td width="10"><img src="../images/generique/pixel.gif" alt="pixel" width="10" height="1" /></td>
+						
+						
+                      <td ><img src="../images/generique/pixel.gif" alt="pixel" width="10" height="1" />
+                      
+                      
+                      
+                        <div >
+								
+							<h1>Informations légales</h1>
+							<br />
+<br />
+
+							<h3>Sommaire</h3><br />
+
+							<ol>
+							    <li><a href="#presentation">   Présentation du site.   </a>  </li>
+								<li><a href="#conditions">  Conditions générales d’utilisation du site et des services proposés.</a>	</li>
+								<li><a href="#description">Description des services fournis. </a>	</li>
+								<li> <a href="#limitations"> Limitations contractuelles sur les données techniques. </a>	</li>
+								<li> <a href="#propriete"> Propriété intellectuelle et contrefaçons.</a>	</li>
+								<li> <a href="#responsabilites"> Limitations de responsabilité.</a>	</li>
+								<li> <a href="#gestion"> Gestion des données personnelles.</a>	</li>
+								<li> <a href="#liens"> Liens hypertextes et cookies.</a>	</li>
+								<li> <a href="#droit"> Droit applicable et attribution de juridiction.</a>	</li>
+								<li> <a href="#lois"> Les principales lois concernées.</a>	</li>
+								<li> <a href="mentions_legales.html#lexique"> Lexique.</a>	</li>
+								
+								
+						  </ol>
+							
+							<br />
+<br />
+
+                       
+                          <h2><a id="presentation"></a> 1. Présentation du site.    </h2>
+                         
+                          <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site http://cava-cebazat.fr</p>
+                      
+                          <p> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p> <p><strong>Propriétaire</strong> : Comité d'Animation des Vergers d'Aubeterre – Président – 4 RUE D'AUBETERRE 63118 CEBAZAT<br /> <strong>Créateur</strong>  : <a href="http://cava-cebazat.fr">Serge BRUN</a><br /> <strong>Responsable publication</strong> : joel BOURACHOT – joel.bourachot@orange.fr<br /> Le responsable publication est une personne physique.<br /> <strong>Webmaster</strong> : joel BOURACHOT – joel.bourachot@orange.fr<br /> <strong>Hébergeur</strong> : IONOS by 1&1 – 7 place de la Gare BP 70109 57201 Sarreguemines Cedex<br />  Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank" href="https://www.subdelirium.com/generateur-de-mentions-legales/">Mentions légales</a></p>
+
+<h2><a  id="conditions"></a>2. Conditions générales d’utilisation du site et des services proposés.</h2> 
+<p>L’utilisation du site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> sont donc invités à les consulter de manière régulière.</p> <p>Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par le Comité d'Animation des Vergers d'Aubeterre, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention.</p> <p>Le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> est mis à jour régulièrement par joel BOURACHOT. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.</p> 
+							
+<h2><a  id="description"></a>3. Description des services fournis.</h2>
+<p>Le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> a pour objet de fournir une information concernant l’ensemble des activités de l'association.</p> <p>Le Comité d'Animation des Vergers d'Aubeterre s’efforce de fournir sur le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> des informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.</p> <p>Tous les informations indiquées sur le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.</p> 
+							
+<h2> <a  id="limitations"></a>4. Limitations contractuelles sur les données techniques.</h2> 
+ <p>Le site Internet ne pourra être tenu responsable de dommages matériels liés à l’utilisation du site. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour.</p> 
+							
+<h2>  <a  id="propriete"></a> 5. Propriété intellectuelle et contrefaçons.</h2> 
+<p>Le Comité d'Animation des Vergers d'Aubeterre est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes, sons, logiciels.</p> <p>Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable au Comité d'Animation des Vergers d'Aubeterre.</p> <p>Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p> 
+							
+<h2> <a  id="responsabilites"></a>6. Limitations de responsabilité.</h2> 
+<p>Le Comité d'Animation des Vergers d'Aubeterre ne pourra être tenue responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a>, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.</p> <p>Le Comité d'Animation des Vergers d'Aubeterre ne pourra également être tenue responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a>.</p>
+<p>Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont à la disposition des utilisateurs. Le Comité d'Animation des Vergers d'Aubeterre se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant, le Comité d'Animation des Vergers d'Aubeterre se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie…).</p> 
+							
+<h2> <a  id="gestion"></a>7. Gestion des données personnelles.</h2> 
+<p>En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la Directive Européenne du 24 octobre 1995.</p> <p>A l'occasion de l'utilisation du site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a>, peuvent êtres recueillies : l'URL des liens par l'intermédiaire desquels l'utilisateur a accédé au site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a>, le fournisseur d'accès de l'utilisateur, l'adresse de protocole Internet (IP) de l'utilisateur.</p> <p> En tout état de cause le Comité d'Animation des Vergers d'Aubeterre ne collecte des informations personnelles relatives à l'utilisateur que pour le besoin de certains services proposés par le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a>. L'utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu'il procède par lui-même à leur saisie. Il est alors précisé à l'utilisateur du site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> l’obligation ou non de fournir ces informations.</p> <p>Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, tout utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant, en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.</p> <p>Aucune information personnelle de l'utilisateur du site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers.</p>
+<p>Le site n'est pas déclaré à la CNIL car il ne recueille pas d'informations personnelles. </p> <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p> 
+							
+<h2>  <a  id="liens"></a>8. Liens hypertextes et cookies.</h2> 
+<p>Le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation du Comité d'Animation des Vergers d'Aubeterre. Cependant, le Comité d'Animation des Vergers d'Aubeterre n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait.</p> <p>La navigation sur le site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur. Un cookie est un fichier de petite taille, qui ne permet pas l’identification de l’utilisateur, mais qui enregistre des informations relatives à la navigation d’un ordinateur sur un site. Les données ainsi obtenues visent à faciliter la navigation ultérieure sur le site, et ont également vocation à permettre diverses mesures de fréquentation.</p> <p>Le refus d’installation d’un cookie peut entraîner l’impossibilité d’accéder à certains services. L’utilisateur peut toutefois configurer son ordinateur de la manière suivante, pour refuser l’installation des cookies :</p> <p>Sous Internet Explorer : onglet outil (pictogramme en forme de rouage en haut a droite) / options internet. Cliquez sur Confidentialité et choisissez Bloquer tous les cookies. Validez sur Ok.</p> <p>Sous Firefox : en haut de la fenêtre du navigateur, cliquez sur le bouton Firefox, puis aller dans l'onglet Options. Cliquer sur l'onglet Vie privée.
+  Paramétrez les Règles de conservation sur :  utiliser les paramètres personnalisés pour l'historique. Enfin décochez-la pour  désactiver les cookies.</p> <p>Sous Safari : Cliquez en haut à droite du navigateur sur le pictogramme de menu (symbolisé par un rouage). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres avancés. Dans la section "Confidentialité", cliquez sur Paramètres de contenu. Dans la section "Cookies", vous pouvez bloquer les cookies.</p> <p>Sous Chrome : Cliquez en haut à droite du navigateur sur le pictogramme de menu (symbolisé par trois lignes horizontales). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres avancés. Dans la section "Confidentialité", cliquez sur préférences.  Dans l'onglet "Confidentialité", vous pouvez bloquer les cookies.</p>
+
+  <h2>  <a  id="droit"></a>9. Droit applicable et attribution de juridiction.</h2> 
+  <p>Tout litige en relation avec l’utilisation du site <a href="http://http://cava-cebazat.fr/">http://cava-cebazat.fr</a> est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Clermont-Ferrand (Puy-de-Dôme).</p> 
+  <h2>10. Les principales lois concernées.</h2> 
+  <p>Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004 relative à l'informatique, aux fichiers et aux libertés.</p> <p> Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.</p> 
+							
+  <h2>  <a  id="lexique"></a> 11. Lexique.</h2> 
+  <p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p> <p>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
+
+							
+						  </div> 
+							</td>
+                      
+                      <td ><p>&nbsp;</p></td>
+                      <td width="10"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+                    </tr>
+                  </table>                  </td>
+                <td width="12" align="left" valign="middle" class="bord_droit" onfocus="MM_openBrWindow('../diaporama/2019/karting/images/fulls/37.JPG','','')">&nbsp;</td>
+              </tr>
+              <tr>
+               <!-- <td width="12" height="12" align="right" valign="top"><img src="images/cadre_principal/coin_gauche_bas.gif" alt="coin bas gauche" width="12" height="12" /></td>
+               -->
+                <td height="12" align="center" valign="top" class="bord_bas">&nbsp;</td>
+               <!-- <td width="12" height="12" align="left" valign="top"><img src="images/cadre_principal/coin_droit_bas.gif" alt="coin droite bas" width="12" height="12" /></td>
+               
+               -->
+              </tr>
+				</tr>
+              </table>            
+            <p class="style5"></p></td>
+        <td rowspan="2"><img src="../images/generique/pixel.gif" alt="pixel" width="10" height="300" /></td>
+      </tr>
+      
+      <tr>
+        <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="Style4_centre">
+            <tr valign="top">
+              <td>
+              
+                  <article>
+                  <p>
+                     <br />
+                    Mise à jour : <br />
+                    19 mars 2020 à 10:49<br />
+                  </p>
+                  </article>
+                 
+             </td>
+            </tr>
+          </table>          </td>
+        </tr>
+      <tr>
+        <td colspan="6" bgcolor="#666666"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
+      </tr>
+      <tr>
+        <td colspan="6">&nbsp;</td>
+      </tr>
+      <tr>
+		   <td colspan="6"><div align="center"><a href="formail2.html">Contact</a> | Mentions légales | <a href="plan_du_site.html">Plan du site</a></div></td>
+       
+      </tr>
+	  
+	 <tr>
+		   <td colspan="6"><div align="center"><br />
+</div></td>
+       
+      </tr>
+	
+	
+	<tr>
+		  
+        <td colspan="6"><div align="center">© 2009 Comité d'Animation des Vergers d'Aubeterre </div></td>
+
+      </tr>
+	
+    
+	<tr><br /> <td height="3"></td><td></td><td width="258"></td><td width="1"></td><td width="548"></td><td></td></tr>
+	
+    </table>
+      </div>
+</td>
+  </tr>
+</table>
+</body>
+</html>
