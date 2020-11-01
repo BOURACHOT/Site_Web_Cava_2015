@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+	
+	
+	<!--  debut code pour ajout de favicon   -->
+    <link rel="shortcut icon" href="images/generique/icone_pomme.ico"/>
+    <link rel="apple-touch-icon" href="images/generique/icone_pomme.ico"/>
+<!--  fin du code pour ajout de favicon   -->
+
+	
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,21 +21,31 @@
   crossorigin="anonymous"
   >
 
-  <title>Info School</title>
+  <title>Le Comité d'animation des Vergers d'Aubeterre</title>
+  <script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+  </script>
 </head>
 
 <body>
 	
  <!-- debut de navigation -->	
 	
-  <div class="bg-dark">
+ 
+	<div class="bg-dark">
     <div class="container">
       <div class="row">
-        <nav class="col navbar navbar-expand navbar-dark">
-          
-          <div>
+        <nav class="col navbar navbar-expand-lg navbar-dark">
+         
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarContent" class="collapse navbar-collapse">
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              
+				 <li class="nav-item active">
                 <a class="nav-link" href="index_boot.html">Accueil</a>
               </li>
               <li class="nav-item">
@@ -49,6 +67,8 @@
                 <a class="nav-link" href="html/bons_plans_accueil.html">Bons Plans</a>
               </li>
 				
+				
+				
             </ul>
           </div>
         </nav>
@@ -60,29 +80,91 @@
 	
 	
 	
-  <div class="container">
+  <div class="container">  <!-- debut du conteneur -->	
+	  
     <div class="row">
       <div class="col">
-        <p>HERO SECTION</p>
+         <div class="jumbotron">
+          
+			<a> <img  class="card-img-top"src="images/Banniere/banniere-cava-010.jpg" alt="banniere"  /></a>
+			<h4> Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</h4>
+        </div>
       </div>
-    </div>
+	 </div>
+	  
     <div class="row">
-      <div class="col-12 col-lg-4">
-        <p>INFO CARD 1</p>
+      <div class="col-12 col-lg-3">
+        <p>navigation vertical et meteo</p>
       </div>
       <div class="col-12 col-lg-4">
-        <p>INFO CARD 2</p>
+        <p>Agenda</p>
       </div>
-      <div class="col-12 col-lg-4">
-        <p>INFO CARD 3</p>
+	
+		<!-- debut dernieres activites -->	
+      <div class="col-12 col-lg-5">
+		  
+  <article>
+		   <div class="card">
+			   
+			   
+			    <img src="diaporama/2020/sancy/images/fulls/02.jpg" alt="sancy" class="card-img-top" onClick="MM_openBrWindow('diaporama/2020/sancy/images/fulls/02.jpg','','')">
+			   <div class="card-body">
+				  
+				 <h5 class="card-title">Visite Sancy septembre 2020</h5> 
+				   
+				  <p class="card-text">L’Auvergne n’est pas qu’un plateau de fromages !...
+			C’est aussi une région avec de merveilleux paysages qu’il faut savoir découvrir et dans de bonnes conditions… 
+			En ce jeudi 17 septembre, on oublie pour un jour la COVID-19 et nous voilà partis dans le massif du Sancy, avec comme premier objectif le lac Pavin. </p>
+					 
+				   <a href="html/reportage_2020.html#sancy" class="btn btn-link">Suite et Photos</a>
+			   </div>
+			</div>
+ </article>	
+		  
+		  
+ <article>
+		   <div class="card">
+			    <img src="diaporama/2020/apero/images/fulls/01.jpg" alt="apero" class="card-img-top">
+			   <div class="card-body">
+				  <h5 class="card-title">Apéritif de quartiers septembre 2020</h5>
+				   
+				  <p class="card-text">Les adhérents du centre du lotissement sont-ils des chanceux ? Nous pensons que oui car ils ont eu la chance de participer à l’apéritif de leur quartier…
+et ce fut la seule réunion autorisée en raison de l’évolution de la pandémie de COVID-19 !... </p>
+					   <a href="html/reportage_2020.html#sancy" class="btn btn-link">Suite et Photos</a>
+			   </div>
+			</div>
+ </article>			  
+			  
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <p>FOOTER</p>
+		  
+		 
+	<!-- fin de  dernieres activites -->	
+		
+    </div> <!-- fin de  div row -->
+	  
+	  
+	 </div>  <!-- fin du conteneur -->	  
+   
+	  <!-- debut du pied de page -->
+	  
+	   <div class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item"><a href="html/formail2.html">Contact</a></li>
+            <li class="list-inline-item">&middot;</li>
+            <li class="list-inline-item"><a href="html/mentions-legales.html">Mentions légales</a></li>
+            <li class="list-inline-item">&middot;</li>
+            <li class="list-inline-item"><a href="html/plan_du_site.html">Plan du site</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+	 <!-- debut du pied de page -->  
+	  
+ 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
