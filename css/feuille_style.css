@@ -3,7 +3,7 @@
 	float: right;
 	margin-top: 0px;
 	background-position: 0px 0px;
-	display: inline-block;
+	
 	position: static;
 	border: 0px solid #CCCCCC;
 	padding: 0px;
@@ -11,7 +11,7 @@
 	height: 34px;
 	width: 67px;
 	background-image: url(../images/accueil/images_agenda/agenda_003_01.gif);
-	text-align: center;
+	
 	color: #FFFFFF;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -23,7 +23,7 @@
 	float: right;
 	margin-top: 0px;
 	background-position: 0px 0px;
-	display: inline-block;
+	
 	position: static;
 	border: 0px solid #CCCCCC;
 	padding: 0px;
@@ -39,6 +39,7 @@
 .nav3 {
 	background-repeat: no-repeat;
 	float: right;
+	
 	background-position: 0px 0px;
 	position: static;
 	border: 0px solid #CCCCCC;
