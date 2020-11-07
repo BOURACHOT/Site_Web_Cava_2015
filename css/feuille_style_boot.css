@@ -1,3 +1,14 @@
+body {
+	
+	background-image: url(../images/generique/fond_bg_body1.jpg);
+		background-repeat: repeat;
+}
+
+
+
+
+
+                                      /* debut css pour le bandeau cava  */
 .fond {
  background: url('image_de_fond.jpg') no-repeat center center;
  position: fixed; /* Le fond est fixé en haut de la page */
@@ -12,7 +23,23 @@
 .jumbotron {
  margin-bottom: 0px;
  height: 300px;
- color: white; /* Le texte sera affiché en blanc */
- text-shadow: black 0.3em 0.3em 0.3em;
- background:transparent;
+/* color: white;  Le texte sera affiché en blanc */
+ /*text-shadow: black 0.3em 0.3em 0.3em;   */
+ background:transparent;  /* supprime le background gris   */
 }
+                                      /* fin css pour le bandeau cava  */
+
+
+
+
+1
+2
+3
+4
+5
+6
+7
+
+
+
+
