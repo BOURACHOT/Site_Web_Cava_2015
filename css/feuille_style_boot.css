@@ -32,14 +32,17 @@ body {
 
 
 
-1
-2
-3
-4
-5
-6
-7
+.card-header{
+	background-color: #e6ffe1;  /*  coloration verte   */
+	
+}
 
 
-
+li {
+ font-family: Arial, sans-serif;
+ font-size: 100%;
+ color: black;
+ display : list-item;
+ list-style-image : url(../images/generique/puce_15x15.gif);
+} 
 
