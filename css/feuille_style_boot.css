@@ -10,8 +10,8 @@ body {
 
                                       /* debut css pour le bandeau cava  */
 .fond {
- background: url('image_de_fond.jpg') no-repeat center center;
- position: fixed; /* Le fond est fixé en haut de la page */
+/* background: url('image_de_fond.jpg') no-repeat center center;  */
+/* position: fixed;  Le fond est fixé en haut de la page */
  width: 100%; /* Il occupe toute la largeur de l'écran 100% */
   /*   height: 300px;On met ici la même hauteur que le jumbotron */
  top:0;
@@ -22,6 +22,7 @@ body {
 }
 .jumbotron {
  margin-bottom: 0px;
+	padding-top: 0px; /* permet de coller le bandeau cava au menu superieur  */
  /*height: 300px; */
 /* color: white;  Le texte sera affiché en blanc */
  /*text-shadow: black 0.3em 0.3em 0.3em;   */
@@ -38,7 +39,8 @@ body {
 }
 
 
-li {
+/*  on applique uniquement sur la colonne agenda une puce image  */
+.puce_perso li {
  font-family: Arial, sans-serif;
  font-size: 100%;
  color: black;
