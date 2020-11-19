@@ -48,3 +48,7 @@ body {
  list-style-image : url(../images/generique/puce_15x15.gif);
 } 
 
+/*   on modifie legerement la couleur verte des boutons   */
+.btn-success{
+	background-color: #28BF42 ;
+}
