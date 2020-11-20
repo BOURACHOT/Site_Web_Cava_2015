@@ -39,7 +39,7 @@ body {
 }
 
 
-/*  on applique uniquement sur la colonne agenda une puce image  */
+/*  on applique uniquement sur la colonne agenda de la page index une puce image  */
 .puce_perso li {
  font-family: Arial, sans-serif;
  font-size: 100%;
