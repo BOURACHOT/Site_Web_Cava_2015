@@ -1,6 +1,6 @@
 /* couleurs utilisées
 color: #007bff; =>couleur bleu contact mentions legales plan du site
-background-color: #f1f9fb;  =>  liste reportages
+background-color: #f1f9fb;  =>  liste reportages couleur verte
 */
 
 
@@ -79,9 +79,9 @@ hr {
 }
 
 
-/* debut  on modifie les couleurs de fond dans la page reportage pour les differents reportages  */
+/* debut  on modifie les couleurs de fond dans la page reportage pour les differents reportages    #f1f9fb   */
 .list-group-item-mine {
-  background-color: #f1f9fb;
+  background-color: #ffffff;
     border-left-color: #fff;
   border-right-color: #fff;
 	border: 1px solid rgba(0,0,0,.125);
