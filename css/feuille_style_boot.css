@@ -90,8 +90,14 @@ hr {
 
 
 .list-group-item-mine:hover {
-  background-color: #e6ffe1;  /*  coloration verte   */
+  background-color: #e6ffe1;  /*  coloration verte pale  */
 }
 /* fin de   on modifie les couleurs de fond dans la page reportage pour les differents reportages  */
 
+a {
+    color: #000000;   /* couleur origine   #007bff;    */
+    text-decoration: none;
+    background-color: transparent;
+}
 
+a:hover{color: #8bfe73;}
