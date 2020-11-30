@@ -51,7 +51,7 @@ body {
 
 
 .card-header{
-	background-color: #e6ffe1;  /*  coloration verte   */
+	background-color: #e6ffe1;  /*  coloration verte des card  */
 	
 }
 
@@ -68,6 +68,7 @@ body {
 /*   on modifie legerement la couleur verte des boutons   */
 .btn-success{
 	background-color: #28BF42 ;
+	color: #000000;
 }
 
 
@@ -101,3 +102,13 @@ a {
 }
 
 a:hover{color: #8bfe73;}
+
+
+
+
+/* debut modification de la couleur de fond pour le menu horizontal quand il est activé   */ 
+.dropdown-item.active, .dropdown-item:active {
+    color: #000000;
+    text-decoration: none;
+    background-color:#8bfe73;    /*  coloration verte  */
+/* fin de   modification de la couleur de fond pour le menu horizontal quand il est activé   */      
