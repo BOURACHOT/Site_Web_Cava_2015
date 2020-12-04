@@ -1,159 +1,259 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Page d'accueil du Cava</title>
-<link href="../css/feuille_style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">
-<!--
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	
+	
+	<!--  debut code pour ajout de favicon   -->
+    <link rel="shortcut icon" href="../images/generique/icone_pomme.ico"/>
+    <link rel="apple-touch-icon" href="../images/generique/icone_pomme.ico"/>
+<!--  fin du code pour ajout de favicon   -->
+
+	
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous"
+  >
+  <link href="../css/feuille_style_boot.css" rel="stylesheet" type="text/css">
+  <title>Le Comité d'animation des Vergers d'Aubeterre</title>
+	
+  <script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
 }
+
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-function MM_openBrWindow(theURL,winName,features) { //v2.0
-  window.open(theURL,winName,features);
-}
-//-->
-</script>
+  </script>
+	
+	
+	
 </head>
 
-<body onload="MM_preloadImages('../images/boutons_survol/liens_survole.gif','../images/navigation_2015/accueil_survole.png','../images/navigation_2015/membres_survole.png','../images/navigation_2015/le_cava_survole.png','../images/navigation_2015/presse_survole.png','../images/navigation_2015/reportage_survole.png','../images/navigation_2015/prets_survole.png','../images/navigation_2015/bon_plan_survole.png')">
+<body>
+	<div class="container-fluid" >  <!--  debut container principal  -->
+		
+	<div class="bg-dark">
+	
+		<div class="row">
+				
+       <nav class="col navbar navbar-expand-lg navbar-light"  style="background-color: #e6ffe1;">
+         
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              
+				 <li class="nav-item ">
+                <a class="nav-link" href="../index.html">Accueil</a>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link" href="membres.html">Membres</a>
+              </li>
+				<li class="nav-item">
+                <a class="nav-link" href="le_cava.html">Le CAVA</a>
+              </li>
+				<li class="nav-item">
+                <a class="nav-link" href="presse.html">Presse</a>
+              </li>
+				
+				
+				
+				
+			  <li class="nav-item  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reportages
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item " href="reportage_2020.html">2020</a>
+          <a class="dropdown-item active" href="reportage_2019.html">2019</a>
+			<a class="dropdown-item" href="reportage_2018.html">2018</a>
+			<a class="dropdown-item" href="reportage_2017.html">2017</a>
+			<a class="dropdown-item" href="reportage_2016.html">2016</a>
+			<a class="dropdown-item" href="reportage_2015.html">2015</a>
+          <a class="dropdown-item" href="reportage_2014.html">2014</a>
+			<a class="dropdown-item" href="reportage_2013.html">2013</a>
+			<a class="dropdown-item" href="reportage_2012.html">2012</a>
+			<a class="dropdown-item" href="reportage_2011.html">2011</a>
+			<a class="dropdown-item" href="reportage_2010.html">2010</a>
+          <a class="dropdown-item" href="reportage_2009.html">2009</a>
+			<a class="dropdown-item" href="reportage_2008.html">2008</a>
+			<a class="dropdown-item" href="reportage_2007.html">2007</a>
+			<a class="dropdown-item" href="reportage_2006.html">2006</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item " href="reportage.html">Les reportages</a>
+        </div>
+      </li>
+				
+				
+				
+				
+				<li class="nav-item">
+                <a class="nav-link" href="pretdivers.html">Prêts</a>
+              </li>
+				<li class="nav-item">
+                <a class="nav-link" href="bons_plans_accueil.html">Bons Plans</a>
+              </li>
+				
+				
+				
+            </ul>
+          </div>
+        </nav>
+      </div>  <!-- fin container navigation -->
+	  </div>   <!-- fin de la class bg-dark  couleur de fond background color  primary, secondary,sucess etc...-->
+		
+		
+		
+	<!--début du jumbotron   -->	
+		
+		<div class="row">
+      <div class="col">
+         <div class="jumbotron">
+			 
+           <div class="fond">
+					<a> <img  class="card-img-top" src="../images/Banniere/banniere-cava-010.jpg" alt="banniere"  /></a>
+					<h4> Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</h4>
+		   </div> 	
+      </div>
+        </div>
+      </div> 
+		<!--fin  du jumbotron   -->	
+		</div>   <!--fin   du container  fluid-->
+				 
+	
+		<div class="container">   <!-- debut   du container  secondaire  membres-->
+			<div class="row">
+			  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d-none d-lg-block">
+				  <!--   <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 d-none d-sm-block">  -->
+					    <div   class=    "mt-5"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->			
+				   		<div   class="text-center"    > 	  <!--   class="mb-5"   la class mb-5 permet  une marge bottom bas de 5 -->	
+									  <img  src="../images/accueil/medaille-100p.jpg"   alt="medaille" >
+					    </div> <!-- fin du div text-center -->
+				</div>	
+					  
+				 <div   class=    "mt-5 " > 	 <!--   class="mt-5"  "mt-1 mt-md-5 "  la class mb-5 permet  une marge top bas de 5   mt-1 pour les ecrans inferieur a md-->	
+					 <div   class="text-center"   >		
+					   <a href="../index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image38','','../images/navigation_2015/accueil_survole.png',1)"><img src="../images/navigation_2015/accueil.png" alt="accueil" name="Image38" width="150" height="50" id="Image38" border="0" /></a>
+				   </div> <!-- fin du div text-center -->
+				 </div>
+				
+				 <div   class=    "mt-3"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+					 <div   class="text-center"   >	  
+					 <a href="membres.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('membres','','../images/navigation_2015/membres_survole.png',1)"><img src="../images/navigation_2015/membres.png" alt="les membres du CAVA" name="membres" width="150" height="50" border="0" id="membres" /></a>
+				   </div> <!-- fin du div text-center -->
+				 </div>
+					  
+			
+			 	 <div   class=    "mt-3"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+					 <div   class="text-center"   >	    
+					 	<a href="le_cava.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lecava','','../images/navigation_2015/le_cava_survole.png',1)"><img src="../images/navigation_2015/le_cava.png" alt="Historique du CAVA" name="lecava" width="150" height="50" border="0" id="lecava" /></a>
+					 </div> <!-- fin du div text-center -->
+			 	 </div>
+				  
+					  
+				  <div   class=    "mt-3"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+					 <div   class="text-center"   >	 
+					  		<a href="presse.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('presse','','../images/navigation_2015/presse_survole.png',1)"><img src="../images/navigation_2015/presse.png" alt="La revue de presse du CAVA" name="presse" width="150" height="50" border="0" id="presse" /></a>
+					 </div> <!-- fin du div text-center -->
+				 </div>
+					  
+					    
+					  <div   class=    "mt-3"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+					 <div   class="text-center"   >
+					  <a href="reportage.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('reportage','','../images/navigation_2015/reportage_survole.png',1)"><img src="../images/navigation_2015/reportage.png" alt="Les reportages du CAVA" name="reportage" width="150" height="50" border="0" id="reportage" /></a>
+						</div> <!-- fin du div text-center -->
+				 </div>
+					  
+					   <div   class=    "mt-3"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+					 <div   class="text-center"   >
+					  <a href="pretdivers.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('pret_divers','','../images/navigation_2015/prets_survole.png',1)"><img src="../images/navigation_2015/prets.png" alt="Les prêts du CAVA" name="pret_divers" width="150" height="50" border="0" id="pret_divers" /></a>
+						 </div> <!-- fin du div text-center -->
+				 </div>
+					  
+					   <div   class=    "mt-3"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+					 <div   class="text-center"   >
+					  <a href="bons_plans_accueil.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('bons_plans','','../images/navigation_2015/bon_plan_survole.png',1)"><img src="../images/navigation_2015/bon_plan.png" alt="Les bons plans du CAVA" name="bons_plans" width="150" height="50" border="0" id="bons_plans" /></a>
+					     </div> <!-- fin du div text-center -->
+				 </div>
+					  
+					   <div   class=    "mt-5"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+					  <div   class="text-center"   > 
+					   <p><a href="formail2.html"><img src="../images/generique/logo_email_002.gif" alt="email" width="96" height="67" border="0" /></a></p>
+              <p><a href="formail2.html"    class="btn btn-link"  >nous contacter</a></p>
+						 
+					   </div> <!-- fin du div text-center -->
+					  </div>
+					  
+					  
+					  <!--debut de la metéo-->
+			    <div   class=    "mt-5"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
+						    <div   class="text-center"   > 
+						 <p> <a href="http://www.meteo24.fr/fr/home/meteo-france-et-europe/temps-dans-le-monde/temps-des-villes/ville/33X5739/cebazat.html"><img src="https://www.tameteo.com/wimages/foto81e3f7d75fc9c3c82ea268b58b76b3d5.png"></a>
+            				 </p> 
+						   </div> <!-- fin du div text-center -->
+				    </div>
+				     <!--fin de la metéo-->
+				  
+				  
+				  
+				  <!--  debut compteur   -->
+				  
+				  <div   class="text-center"   > 
+				   <p>Vous êtes le</p>
+				
+				<a href="https://www.compteurdevisite.com" title="compteur de site"><img src="https://counter3.stat.ovh/private/compteurdevisite.php?c=ahx47uclfy8s2canjk6l6jquka7sh5xq" border="0" title="compteur de site" alt="compteur de site"></a>
+	
+              <p> 
+                depuis<br /> 
+                le 25/11/2006</p>
+			
+			
+				</div>
+				  
+				  <!--  fin compteur   -->
+				  
+				  
+					
+					
+			   </div>
+				
+				
+				
+				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ">
+				 	
+									<h1  class="text-center   mb-5"  >LES REPORTAGES 2019</h1>
+								
+						    
 
-
-
-
-<table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
-  <tr>
-    <td ><div align="center"><table width="901" border="0" cellpadding="0" cellspacing="0"> 
-      <tr>
-        <td colspan="6" align="center"><table width="901" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="900" height="120" rowspan="2" align="left" valign="top"><div align="center"><img src="../images/Banniere/banniere-cava-010.jpg" alt="banniere" width="901" height="120" /></div>              </td>
-          </tr>
-          
-          
-        </table>
-          <div align="center"><img src="../images/generique/pixel.gif" alt="pixel" width="901" height="10" /><br />
-          </div></td>
-        </tr>
-      <tr>
-        <td colspan="6" bgcolor="#999999"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
-        </tr>
-      <tr>
-        <td colspan="6"><div align="left"><span class="style5">Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</span></div></td>
-      </tr>
-        
-      
-      <tr>
-        <td width="150" align="center" valign="top">
-            <table width="150" border="0" cellspacing="5" cellpadding="0">
-              <tr>
-                <td width="150" height="10"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
-              </tr>
-              
-              
-               <tr>
-                <td width="150">&nbsp;</td>
-              </tr>
-              
-              
-              <tr>
-                <td><a href="../index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image51','','../images/navigation_2015/accueil_survole.png',1)"><img src="../images/navigation_2015/accueil.png" alt="page accueil" name="Image51" width="150" height="50" id="Image51" border="0" /></a></td>
-              </tr>
-              <tr>
-                <td width="150"><a href="membres.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('membres','','../images/navigation_2015/membres_survole.png',1)"><img src="../images/navigation_2015/membres.png" alt="les membres du CAVA" name="membres" width="150" height="50" border="0" id="membres" /></a></td>
-              </tr>
-              <tr>
-                <td width="150"><a href="le_cava.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lecava','','../images/navigation_2015/le_cava_survole.png',1)"><img src="../images/navigation_2015/le_cava.png" alt="Historique du CAVA" name="lecava" width="150" height="50" border="0" id="lecava" /></a></td>
-              </tr>
-              <tr>
-                <td width="150"><a href="presse.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('presse','','../images/navigation_2015/presse_survole.png',1)"><img src="../images/navigation_2015/presse.png" alt="La revue de presse du CAVA" name="presse" width="150" height="50" border="0" id="presse" /></a></td>
-              </tr>
-              <tr>
-                <td width="150"><a href="reportage.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image52','','../images/navigation_2015/reportage_survole.png',1)"><img src="../images/navigation_2015/reportage.png" alt="reportage" name="Image52" width="150" height="50" id="Image52" border="0" /></a></td>
-              </tr>
-              <tr>
-                <td width="150"><a href="pretdivers.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('pret_divers','','../images/navigation_2015/prets_survole.png',1)"><img src="../images/navigation_2015/prets.png" alt="Les prêts du CAVA" name="pret_divers" width="150" height="50" border="0" id="pret_divers" /></a></td>
-              </tr>
-              <tr>
-               <td width="150"><a href="bons_plans_accueil.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('bons_plans','','../images/navigation_2015/bon_plan_survole.png',1)"><img src="../images/navigation_2015/bon_plan.png" alt="Les bons plans du CAVA" name="bons_plans" width="150" height="50" border="0" id="bons_plans" /></a></td>
-              </tr>
-            </table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td>&nbsp;</td>
-              </tr>
-            </table>            
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td class="Style4_centre">résolution minimum recommandée 1024 x 768 pixels</td>
-              </tr>
-            </table> 
-            
-                       
-              
-             	<div id="menu_lecava">
-               <p><a href="formail2.html"><img src="../images/generique/logo_email_002.gif" alt="email" width="49" height="50" border="0" /></a></p>
-               <p>nous contacter</p>
-            </div>
-              
-             
-            
-            
-             
-        <td width="10" rowspan="2" align="left"><img src="../images/generique/pixel.gif" alt="pixel" width="10" height="1" /></td>
-        
-        
-        <td colspan="3" rowspan="2" align="center" valign="top"><img src="../images/generique/pixel.gif" alt="pixel" width="358" height="1" />
-          <table width="738" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="10" colspan="3" align="right" valign="bottom"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
-            </tr>
-            <tr>
-              <!--  <td width="12" height="12" align="right" valign="bottom"><img src="../images/cadre_principal/coin_gauche_haut.gif" alt="coin gauche droit" width="12" height="12" /></td>-->
-              <td height="12" align="center" valign="bottom" class="bord_haut"></td>
-              <!-- <td width="12" height="12" align="left" valign="bottom"><img src="../images/cadre_principal/coin_droit_haut.gif" alt="coin droite haut" width="12" height="12" /></td>-->
-            </tr>
-            <tr>
-              <td width="12" align="right" valign="middle" class="bord_gauche">&nbsp;</td>
-              <td valign="top"><div id="report_2010_corps">
-              
-              
-              
-              
-                  <h1>REPORTAGES 2019 </h1>
-				  
-				  
-				  
-				  
-				  
-				   <article>  
-                <h2><a name="reveillon" id="reveillon"></a> Réveillon</h2>
-                <p>
-					<a href="#">
-						<img src="../diaporama/2019/reveillon/images/fulls/miniature.jpg" alt="reveillon" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/reveillon/images/fulls/03.jpg','reveillon','')" />
-					</a>                               </p>
-                <div align="justify">
-                    <p>
-						
-             <strong> « Meilleurs vœux et surtout bonne santé »…</strong> <br />
+					
+					
+				
+					
+					
+					
+	  <article>	<!--debut de la ligne Réveillon -->				  
+					 	 <div class="row align-items-center">   
+								<div class="card w-100 mb-5 mt-5"     >
+									 <div class="card-body">
+										 
+				 <h3 class="card-title"><a name="reveillon" id="reveillon"></a> Réveillon</h3>
+									 
+									
+				<a href="#" ><img src="../diaporama/2019/reveillon/images/fulls/miniature.jpg" alt="reveillon" class="rounded float-lg-left mr-3 "      onClick="MM_openBrWindow('../diaporama/2019/reveillon/images/fulls/03.jpg','','')"></a>
+										
+									<p class="card-text">
+										 <strong> « Meilleurs vœux et surtout bonne santé »…</strong> <br />
 ils étaient nombreux à partager une soirée de fête sensationnelle !... <br />
 En cette fin d’année 2019, des adhérents festifs ont participé à un réveillon placé sous le signe de <strong>l’amitié et de la convivialité…</strong> <br />
 Après un excellent repas et pour commencer la soirée, les convives ont pu apprécier toute la grâce et la souplesse des <strong>« petits rats du CAVA » </strong>qui s’étaient réunis à cette occasion.<br />
@@ -161,354 +261,61 @@ Après un excellent repas et pour commencer la soirée, les convives ont pu appr
  Le succès fut exceptionnel et la soirée se déroula au rythme d’une musique variée et entrainante. <br />
 Tous les participants furent enchantés et déjà il était l’heure de la soupe à l’oignon préparée de main de maître par notre traiteur.<br />
  6 heures du matin, il fallait se séparer pour aller récupérer des effluves de la nuit.<br />
- L’année 2020 était arrivée… </p>
-                </div>
-                <p><a href="../diaporama/2019/reveillon/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				    <article>  
-                <h2><a name="perenoel" id="perenoel"></a> Père Noël</h2>
-                <p><a href="#"><img src="../diaporama/2019/perenoel/images/fulls/miniature.jpg" alt="perenoel" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/perenoel/images/fulls/02.jpg','perenoel','')" /></a>                               </p>
-                <div align="justify">
-                    <p>
-						
-                Oh Oh Oh… Je suis <strong>le Père-Noël…</strong><br />
- C’est par ces mots que notre bon vieux bonhomme s’est présenté dans les différentes chaumières du lotissement.<br />
- Les enfants furent aux anges lors de son apparition : certains étaient très émus et ne soufflaient mot tandis que d’autres voulaient embrasser le visiteur d’un soir.<br />
- Mais tous attendaient <strong>les cadeaux</strong> et c’est avec fougue que nos chères petites têtes blondes se ruaient sur les paquets pour en extraire le contenu. Une photo avec les parents clôturait cette visite qui, nous l’espérons, marquera à jamais ces instants de <strong>bonheur familial</strong>.</p>
-                </div>
-                <p><a href="../diaporama/2019/perenoel/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				     <article>  
-                <h2><a name="huitres" id="huitres"></a> Huitres</h2>
-                <p><a href="#"><img src="../diaporama/2019/huitres/images/fulls/miniature.jpg" alt="huitres" width="300" height="153" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/huitres/images/fulls/01.jpg','huitres','')" /></a>                               </p>
-                <div align="justify">
-                    <p>
-						
-                 En ce dimanche matin pluvieux, il faisait bon passer <strong>du bon temps entre amis</strong>. <br />
-Se réunir pour partager quelques fruits de mer doit être un moment exceptionnel : les participants se sont retrouvés à la salle Prugnard et ont échangé autour d’un vin blanc bien frais et de quelques<strong> huîtres</strong> parfaitement préparées. <br />
-Entre amis, on ne voit pas passer le temps et les discussions allaient bon train et concernaient des sujets multiples et inépuisables. <br />
-Pourtant, sans s’en apercevoir, l’heure de la séparation pointait déjà à la pendule… <strong>« On recommence l’année prochaine »</strong> proposait le Président et, vu le succès, cette annonce était approuvée à l’unanimité par tous les convives. </p>
-                </div>
-                <p><a href="../diaporama/2019/huitres/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-			      <article>  
-                <h2><a name="voisinades" id="voisinades"></a> voisinades </h2>
-                <p><a href="#"><img src="../diaporama/2019/voisinades/images/fulls/miniature.jpg" alt="voisinades" width="300" height="153" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/voisinades/images/fulls/01.jpg','voisinades','')" /></a>                               </p>
-                <div align="justify">
-                    <p>
-						
-                  En ce vendredi 15 novembre, tous les participants étaient heureux de se retrouver pour un petit instant de convivialité et de gaieté. <br />
-Après un casse-croûte copieux, quelques personnes se sont exercées spontanément au délicat métier d’artistes de théâtre…<br />
- Le thème était très spécial puisqu’il relatait les péripéties de la <strong>famille Piédenclume </strong> lors de leur voyage en Irlande… <br />
-Les actrices et acteurs furent formidables et le scénario complètement inattendu. <br />
-Les applaudissements furent nombreux et la soirée se termina sous les mélodies harmonieuses en respectant l’horaire imposé de 23 heures.   
-					</p>
-                </div>
-                <p><a href="../diaporama/2019/voisinades/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				    <article>  
-                <h2><a name="hallo" id="hallo"></a> Halloween </h2>
-                <p><a href="#"><img src="../diaporama/2019/hallo/images/fulls/miniature.gif" alt="halloween" width="200" height="177" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/hallo/images/fulls/01.jpg','','')" /></a>                               </p>
-                <div align="justify">
-                    <p>
-                   <span class="Style4gras">Halloween</span> a été fêté de la plus belle des manières dans notre lotissement et le rendez-vous avec<span class="Style4gras"> le Diable</span> était très attendu : il nous a fait honneur à l’aide de sa charrette extraordinaire.<br />
- Avec une météo des plus douce, trois brouettes de friandises ont été collectées par<span class="Style4gras"> 48 diablotins</span> (soit environ 2 kg 500 par enfant) : le résultat fut au-delà de toutes attentes mais attention aux dents...<br />
- Toutes les maisons visitées ont été généreuses et nous pouvons remercier les adultes de leur complaisance et de leur gentillesse vis-à-vis des jeunes visiteurs quelque peu dissipés (on saura leur pardonner quelques excès…). <br />
- <strong>Bravo à toutes et tous </strong>et particulièrement à ceux qui ont fait preuve d’imagination par des décors complètement insolites et fantastiques. Reprenons une remarque d’un tout petit : « vivement le prochain carnaval !... » </p>
-                </div>
-                <p><a href="../diaporama/2019/hallo/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-				  
-				  
-				  
-				  
-				  
-				  
-				   <article>  
-                <h2><a name="roanne" id="roanne"></a> Randonnée en pays roannais </h2>
-                <p><a href="#"><img src="../diaporama/2019/roanne/images/fulls/miniature.jpg" alt="roanne" width="200" height="122" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/roanne/images/fulls/08.JPG','','')" /></a>                               </p>
-                <div align="justify">
-                    <p>
-                   Découvrir nos contrées voisines est une expérience qu’il faut faire en groupe de <span class="Style4gras">joyeux lurons</span> !... <br />
-En cette fin septembre, ce fut le cas aux alentours de Roanne bercés par sa majesté LOIRE.<br />
- Quelques compères ont profité du temps clément pour s’adonner à toutes activités surprises autour de la très belle <span class="Style4gras">cité médiévale de Charlieu</span>.<br />
- On a pu côtoyer et frôler l’Histoire de France et des précautions ont été nécessaires lors de la visite du «<span class="Style4gras"> musée hôpital</span> » pour se protéger de reliquats éventuels de particules (encore possibles) de « <span class="Style4gras">gaz moutarde</span> » datant des années 1920 !... <br />
-Bref, personne n’a été contaminé et, après un bon repas, la soirée « <span class="Style4gras">détente</span> » fut des plus appréciée, avec la présentation des péripéties de la famille « <span class="Style4gras">Piédenclume</span> » en Irlande…<br />
- Les rires et gags ont été nombreux mais déjà le retour était annoncé et, au loin,  notre cher<span class="Style4gras"> Puy de Dôme</span> nous tendait ses bras majestueux pour retrouver notre lotissement. </p>
-                </div>
-                <p><a href="../diaporama/2019/roanne/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				   <article>  
-                <h2><a name="karting" id="karting"></a> Karting à Lezoux </h2>
-                <p><a href="#"><img src="../diaporama/2019/karting/images/fulls/miniature.jpg" alt="karting" width="200" height="122" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/karting/images/fulls/37.JPG','','')" /></a>                               </p>
-                <div align="justify">
-                    <p>
-                    En cette belle matinée, nous avions commandé un temps légèrement nuageux et notre demande fut exaucée !...<br />
- Température idéale, piste en parfait état, karts de qualité, tous les éléments étaient réunis pour une bonne réussite et les <span class="Style4gras">pilotes</span> en herbe ou confirmés s’en sont donnés à cœur joie.<br />
- Après quelques conseils pour une bonne maîtrise des <span class="Style4gras">« mécaniques »</span>, chacun s’est donné à fond pour réaliser le meilleur chronométrage. <br />
-Chapeaux aux meilleurs mais également aux vaincus qui ont montré de belles qualités de pilotes.<br />
- Les quelques 22 adultes et 8 enfants ont apprécié cette animation et ont su profiter des tarifs préférentiels exceptionnels proposés à cette occasion par le CAVA. 
-
- </p>
-                </div>
-                <p><a href="../diaporama/2019/karting/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-                  
-                  
-                  
-                  
-                  
-                   
-                   <article>  
-                <h2><a name="carnaval" id="carnaval"></a> La fête de printemps  de Cébazat  </h2>
-                <p><a href="../diaporama/2019/carnaval/index.html"><img src="../diaporama/2019/carnaval/images/fulls/miniature.jpg" alt="carnaval" width="200" height="127" class="image_float" /></a>                               </p>
-                <div align="justify">
-                    <p>
-                    Cébazat a fêté l’arrivée du <strong>printemps</strong> mais le printemps n’a pas fêté Cébazat : temps gris et nuageux, vent frais et tourbillonnant !...<br />
- On a connu mieux pour inciter les cébazaires à venir assister au 3° <strong>carnaval de la ville</strong>. <br />
-
-Nous avons eu la chance de ne pas avoir de précipitations et le défilé, composé de<strong> plusieurs chars fleuris</strong>, a pu égayer les rues de la cité.<br />
- Malgré des conditions météo peu favorables, bon nombre de personnes ont assisté à cette prestation et les <strong>confettis </strong>distribués abondamment ont fait la joie de petits et grands…<br />
-L’arrivée dans le parc Montgroux fut l’occasion de retrouver tous les<strong> « carnavaleux »</strong> et les nombreux adhérents costumés du<strong> CAVA</strong> ont fait honneur à leur char représentant la « Révolution Française ».<br />
-Un <strong>casse-croûte </strong>dans un restaurant local a terminé cette journée intense. </p>
-                </div>
-                <p><a href="../diaporama/2019/carnaval/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-                  
-                  
-                  
-                   <article>  
-                <h2><a name="couscous" id="couscous"></a> Le couscous d'AZIZ </h2>
-                <p><a href="#"><img src="../diaporama/2019/couscous/images/fulls/miniature.jpg" alt="couscous" width="200" height="127" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/couscous/images/fulls/01.jpg','couscous','')" /></a>                               </p>
-                <div align="justify">
-                    <p>
-                     Le couscous d'AZIZ, notre<strong> cuisinier en chef,</strong> quel régal !... <br />
-                     Nous étions nombreux à déguster ce plat mitoné avec amour par notre ami et nous avons partagé un moment exquis de <strong>convivialité</strong> dans son restaurant de Châteaugay.<br />
-Il est bon de se rencontrer et ce <strong>plaisir de la table </strong>a ravi de nombreux convives.<br />
-Profitons de ces instants rares pour échanger et mieux se connaître entre <strong>amis</strong>.<br />
-Expérience à renouveler. </p>
-                </div>
-                <p><a href="../diaporama/2019/couscous/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-                  
-                 
-                 
-                 <article>  
-                <h2><a name="ag" id="ag"></a> Assemblée générale  </h2>
-                <p><a href="#"><img src="../diaporama/2019/ag/images/fulls/miniature.jpg" alt="ag" width="200" height="127" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/ag/images/fulls/01.jpg','ag','')" /></a>                               </p>
-                <div align="justify">
-                      <p>
-                    Les années se suivent et les assemblées générales aussi, même si les participants ont de plus en plus de difficultés à se déplacer pour découvrir les<strong> nouveautés</strong> prévues pour cette nouvelle année.<br />
-    La grosse satisfaction des membres du bureau est la régularité du renouvellement des adhérents puisque que nous sommes encore plus de <strong>100 maisons à soutenir</strong> notre action.<br />
-    Bien sûr, nous ne sommes pas des spécialistes de la communication et de l'organisation aussi nous profitons de cette rubrique<strong> pour remercier</strong> toutes celles et tous ceux qui nous apportent leur soutien.<br />
-    Soyez persuadés que nous mettrons toujours notre engagement au<strong> service </strong>de nos adhérents.
-   					 </p>
-                </div>
-                <p><a href="../diaporama/2019/ag/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-                  
-                   
-                  
-                  
-                  
-                  
-            <article>  
-                <h2><a name="pont_du_chateau" id="pont_du_chateau"></a> Randonnée Pont du Château </h2>
-                <p><a href="#"><img src="../diaporama/2019/pont_du_chateau/images/fulls/miniature.jpg" alt="cava" width="200" height="127" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/pont_du_chateau/images/fulls/28.jpg','huitres','')" /></a>                               </p>
-                <div align="justify">
-                <p>
-                Malgré un temps incertain, c’est un groupe conséquent de nombreux adhérents qui s’est déplacé à<strong> Pont
-                    du Château</strong> pour découvrir les berges de l’Allier.<br /> 
-                    Au cours de la randonnée, nous avons bénéficié de quelques rayons de soleil pour apprécier le parcours sinueux de cette<strong> rivière
-                        à saumon</strong>.<br /> 
-                    Après 8 kms, la pause déjeuner a été nécessaire avant de repartir à la visite
-                    du<strong> musée
-                        de la batellerie<a href="https://www.youtube.com/watch?v=rqPqboHMR_g&amp;feature=youtu.be"> (vidéo)</a></strong>où un guide nous a expliqué toute l’importance
-                    économique et commerciale que le port a connue au cours des siècles passés.<br /> 
-                    Cette journée fut un très bon moment de <strong>convivialité</strong> qui en appelle d’autres.      
-                    </p>
-                </div>
-                <p><a href="../diaporama/2019/pont_du_chateau/index.html">voir diaporama </a></p>
-                <br /><br /> 
-           </article>        
-                  
-                  
-                  
-                    <h2><a name="galette" id="galette"></a> Galette des Rois </h2>
-                <p><a href="#"><img src="../diaporama/2019/galette/images/fulls/miniature.jpg" alt="cava" width="200" height="127" class="image_float" onclick="MM_openBrWindow('../diaporama/2019/galette/images/fulls/01.jpg','huitres','')" /></a></p>
-                      <p>
-    Pour bien commencer la nouvelle année, il faut de<strong> l’énergie</strong> et il y en avait ce dimanche 20 janvier !...<br /> 
-    De nombreux adhérents étaient venus partager<strong> la traditionnelle
-    galette </strong>gracieusement offerte par l’association.<br /> 
-    Ce fut l’occasion de nombreux<strong> échanges amicaux</strong>, notamment pour faire connaissance avec les nouveaux propriétaires.<br /> 
-    Découverte du livre photos et visionnage de la rétrospective de l’année écoulée ont donné un descriptif de toutes les <strong>animations
-    proposées</strong> en 2018. <br />
-    Merci à tous ces jeunes de nous apporter leur soutien.       </p>
-                      <p><a href="../diaporama/2019/galette/index.html">voir diaporama </a></p>
-                       
-                      <br /><br />  
-                  
-                  
-                   <br /><br />  
-                   <br /><br />  
-                   <br /><br />  
-                  
-                  
-                  
-                  
-                  
-                 
-                  
-                  
-                  
-                  
-                  
-                  
-                    
-                 
-                  
-                  
-                  
-                
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                 
-                
-                 
-                 
-                  
-                  
-                  
-                  
-                 
-                  
-                  
-                  
-                  
-                  
-                   
-                  
-                  
-                  
-                 
-                
-                
-                
-                
-              </div>
-              
-              
-              </td>
-              <td width="12" align="left" valign="middle" class="bord_droit"><p>&nbsp;</p>
-                  <p>&nbsp;</p></td>
-            </tr>
-            <tr>
-              <!-- <td width="12" height="12" align="right" valign="top"><img src="../images/cadre_principal/coin_gauche_bas.gif" alt="coin bas gauche" width="12" height="12" /></td>  -->
-              <td height="12" align="center" valign="top" class="bord_bas">&nbsp;</td>
-              <!-- <td width="12" height="12" align="left" valign="top"><img src="../images/cadre_principal/coin_droit_bas.gif" alt="coin droite bas" width="12" height="12" /></td>  -->
-            </tr>
-          </table>
-          <p class="style5"></p></td>
-        <td rowspan="2"><img src="../images/generique/pixel.gif" alt="pixel" width="10" height="300" /></td>
-		</td></tr>
+ L’année 2020 était arrivée…
+									  </p>
+										
+		  <a href="../diaporama/2019/reveillon/index.html" class="btn btn-success">Suite et Photos</a>
+					
+								  </div><!--  fin de la card-body  -->
+							  	</div>   <!--  fin de la card  -->
+							 </div>     <!--  class="row align-items-center   -->
+	</article>	<!--  fin de la ligne   Réveillon   -->		
+	  	
+			
+					
+					
 		
+					
+					
+					
+					
+					  
+
+			</div>    <!-- class="col-xs-12 col-sm-12 col-md-9 col-lg-9   -->
+				</div>
+					</div>
+		
+		
+	<!-- debut du pied de page -->
+				<div class="container-fluid">  			 
+	  
+	   <div class="bg-light" >
+    
+      <div class="row">
+		  
+        <div class="col"   style="background-color: #e6ffe1;" >
+          <ul class="list-inline text-center">
+            <li class="list-inline-item"><a href="html/formail2.html">Contact</a></li>
+            <li class="list-inline-item">&middot;</li>
+            <li class="list-inline-item"><a href="html/mentions-legales.html">Mentions légales</a></li>
+            <li class="list-inline-item">&middot;</li>
+            <li class="list-inline-item"><a href="html/plan_du_site.html">Plan du site</a></li>
+          </ul>
+			<div align="center">© 2009 Comité d'Animation des Vergers d'Aubeterre </div>
+		  </div>
       
-      <tr>
-        <td align="left"><img src="../images/generique/pixel.gif" alt="pixel" width="149" height="10" /></td>
-        </tr>
-      <tr>
-        <td colspan="6" bgcolor="#666666"><img src="../images/generique/pixel.gif" alt="pixel" width="1" height="1" /></td>
-      </tr>
-      <tr>
-        <td colspan="6">&nbsp;</td>
-      </tr>
+    </div>
+  </div>
+</div>			 
+	 <!-- fin du pied de page -->  
 		
 		
-		<tr>
-		   <td colspan="6"><div align="center"><a href="formail2.html">Contact</a> | <a href="mentions-legales.html">Mentions légales</a> | <a href="plan_du_site.html">Plan du site</a></div></td>
-       
-      </tr>
-		
-		
-		 <tr>
-		   <td colspan="6"><div align="center"><br /></div></td>
-       
-     </tr>
-      <tr>
-        <td colspan="6"><div align="center">© 2009 Comité d'Animation des Vergers d'Aubeterre</div></td>
-      </tr>
-      <tr><td height="3"></td><td></td><td width="258"></td><td width="1"></td><td width="548"></td><td></td></tr>
-    </table>
-      </div>
-</td>
-  </tr>
-</table>
+	
+
+  
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
