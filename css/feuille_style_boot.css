@@ -6,7 +6,8 @@ background-color: #f1f9fb;  =>  liste reportages couleur verte
 
 
 
-
+p{text-align: justify;
+}
 
 
 
@@ -99,6 +100,7 @@ a {
     color: #000000;   /* couleur origine   #007bff;    */
     text-decoration: none;
     background-color: transparent;
+	
 }
 
 a:hover{color: #8bfe73;}
@@ -111,4 +113,9 @@ a:hover{color: #8bfe73;}
     color: #000000;
     text-decoration: none;
     background-color:#8bfe73;    /*  coloration verte  */
-/* fin de   modification de la couleur de fond pour le menu horizontal quand il est activé   */      
+/* fin de   modification de la couleur de fond pour le menu horizontal quand il est activé   */   
+	
+	
+	
+	
+	
