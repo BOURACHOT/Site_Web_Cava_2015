@@ -27,11 +27,26 @@
 function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
-
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
   </script>
 	
@@ -39,7 +54,7 @@ function MM_preloadImages() { //v3.0
 	
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('../images/navigation_2015/bon_plan_survole.png')">
 	<div class="container-fluid" >  <!--  debut container principal  -->
 		
 	<div class="bg-dark">
@@ -77,9 +92,9 @@ function MM_preloadImages() { //v3.0
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item active" href="reportage_2024.html">2024</a>
 			<a class="dropdown-item" href="reportage_2023.html">2023</a>
-			<a class="dropdown-item " href="reportage_2022.html">2022</a>
-			<a class="dropdown-item " href="reportage_2021.html">2021</a>
-          <a class="dropdown-item " href="reportage_2020.html">2020</a>
+			 <a class="dropdown-item" href="reportage_2022.html">2022</a>
+          <a class="dropdown-item" href="reportage_2021.html">2021</a>
+          <a class="dropdown-item" href="reportage_2020.html">2020</a>
           <a class="dropdown-item" href="reportage_2019.html">2019</a>
 			<a class="dropdown-item" href="reportage_2018.html">2018</a>
 			<a class="dropdown-item" href="reportage_2017.html">2017</a>
@@ -95,7 +110,7 @@ function MM_preloadImages() { //v3.0
 			<a class="dropdown-item" href="reportage_2007.html">2007</a>
 			<a class="dropdown-item" href="reportage_2006.html">2006</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item " href="reportage.html">Les reportages</a>
+          <a class="dropdown-item active" href="reportage.html">Les reportages</a>
         </div>
       </li>
 				
@@ -133,9 +148,7 @@ function MM_preloadImages() { //v3.0
         </div>
       </div> 
 		<!--fin  du jumbotron   -->	
-		</div>   <!--fin   du container  fluid-->
-				 
-	
+		
 		<div class="container">   <!-- debut   du container  secondaire  membres-->
 			<div class="row">
 			  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d-none d-lg-block">
@@ -175,7 +188,7 @@ function MM_preloadImages() { //v3.0
 					    
 					  <div   class=    "mt-3"> 	 <!--   class="mt-5"   la class mb-5 permet  une marge top bas de 5 -->	
 					 <div   class="text-center"   >
-					  <a href="reportage.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('reportage','','../images/navigation_2015/reportage_survole.png',1)"><img src="../images/navigation_2015/reportage.png" alt="Les reportages du CAVA" name="reportage" width="150" height="50" border="0" id="reportage" /></a>
+					 <img src="../images/navigation_2015/reportage_survole.png" alt="reportage" width="150" height="50" />
 						</div> <!-- fin du div text-center -->
 				 </div>
 					  
@@ -211,13 +224,7 @@ function MM_preloadImages() { //v3.0
 				  
 				  
 				  
-				  <article>
-						   <div   class="text-center"   >
-                            <br />
-                    Mise à jour : <br />
-                   26 avril 2024<br />
-						   </div>
-                      </article>
+				 
 				  
 				  
 					
@@ -227,197 +234,87 @@ function MM_preloadImages() { //v3.0
 				
 				
 				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ">
-				 	
-									<h1  class="text-center   mb-5"  >LES REPORTAGES 2024</h1>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                     <article>	<!--randonnée de Tazenat juin 2024   -->				  
-					 	 <div class="row align-items-center">   
-								<div class="card w-100 mb-5 mt-5"     >
-								  <div class="card-body">
-										 
-				 <h3 class="card-title"><a name="tazenat" id="tazenat"></a>Randonnée de Tazenat juin 2024  </h3>
-													
-				<a href="#" ><img src="../diaporama/2024/tazenat/images/fulls/miniature.jpg" alt="tazenat" class="rounded float-lg-left mr-3 "      onClick="MM_openBrWindow('../diaporama/2024/tazenat/images/fulls/01.jpg','','');MM_openBrWindow
-					('../diaporama/2024/tazenat/images/fulls/01.jpg','','')"></a>
-										
-									<p class="card-text">
-										Les « anciens » sont-ils encore jeunes ?<br>
- On peut l’affirmer car ils aiment la marche douce. Certes, il faut s’avoir choisir les jours de randonnée pour bénéficier du beau temps et ce fut le cas ce mardi 25 juin où un petit groupe de courageux a découvert le magnifique plan d’eau du gour de Tazenat. <br>
-Les participants ont flâné sous les frais ombrages avant d’arriver sur le belvédère qui domine cette curiosité naturelle.<br>
- On prétend que l’Auvergne est une bien belle région mais encore faut-il se donner les moyens de la découvrir.<br>
- Afin de bien terminer la ballade, et comme le veut la tradition, quelques amis nous ont rejoint pour partager le repas local préparé avec minutie par le chef de cuisine.<br>
- Une bien belle journée à reproduire !... 
-
-   
-								    </p><br>
-
-										
-		  <a href="../diaporama/2024/tazenat/index.html" class="btn btn-success">Diaporama</a>
-                                     
-									 
-			
-                 						  
-									  
-					
-								  </div><!--  fin de la card-body  -->
-							  	</div>   <!--  fin de la card  -->
-							 </div>     <!--  class="row align-items-center   -->
-	</article>	<!-- Fin derandonnée de Tazenat juin 2024   -->		
-					
-                    
-                    
-                    
-                    
-                     <article>	<!-- Carnaval mai 2024    -->				  
-					 	 <div class="row align-items-center">   
-								<div class="card w-100 mb-5 mt-5"     >
-								  <div class="card-body">
-										 
-				 <h3 class="card-title"><a name="carnaval" id="carnaval"></a>Carnaval mai 2024   </h3>
-													
-				<a href="#" ><img src="../diaporama/2024/carnaval/images/fulls/miniature.jpg" alt="carnaval" class="rounded float-lg-left mr-3 "      onClick="MM_openBrWindow('../diaporama/2024/carnaval/images/fulls/24.jpg','','');MM_openBrWindow
-					('../diaporama/2024/carnaval/images/fulls/24.jpg','','')"></a>
-										
-									<p class="card-text">
-										C’est un fameux trois mats fier comme un oiseau, hisse et ho, Santiano…<br>
- Cette chanson bien connue fut le refrain entonné par tous les participants à cette festivité de printemps.<br>
- Bénéficiant d’une fenêtre météo favorable, notre bateau de corsaires du Bédat s’est frayé une très agréable croisière parmi la foule de spectateurs ébahis par la qualité du travail présenté.<br>
- Tous les acteurs déguisés ont apporté un soutien sans faille et les batailles de confettis ont été nombreuses et joyeuses.<br>
- Un grand merci à tous les participants et aux volontaires qui se sont impliqués à la réussite de ces moments de joie.<br>
- Le repas du soir fut le bienvenu pour terminer cette journée festive. Vivement l’année prochaine…  
-
-   
-								    </p><br>
-
-										
-		  <a href="../diaporama/2024/carnaval/index.html" class="btn btn-success">Diaporama</a>
-                                     
-									 
-			 <a href="https://youtu.be/MTeSzLYvTLg" class="btn btn-success">Vidéo</a>
-                 						  
-									  
-					
-								  </div><!--  fin de la card-body  -->
-							  	</div>   <!--  fin de la card  -->
-							 </div>     <!--  class="row align-items-center   -->
-	</article>	<!-- Fin de Carnaval mai 2024    -->		
-					
-					
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <article>	<!-- Le château de Guédelon avril 2024    -->				  
-					 	 <div class="row align-items-center">   
-								<div class="card w-100 mb-5 mt-5"     >
-								  <div class="card-body">
-										 
-				 <h3 class="card-title"><a name="guedelon" id="guedelon"></a>Le château de Guédelon avril 2024  </h3>
-													
-				<a href="#" ><img src="../diaporama/2024/guedelon/images/fulls/miniature.jpg" alt="guedelon" class="rounded float-lg-left mr-3 "      onClick="MM_openBrWindow('../diaporama/2024/guedelon/images/fulls/29.jpg','','');MM_openBrWindow
-					('../diaporama/2024/guedelon/images/fulls/29.jpg','','')"></a>
-										
-									<p class="card-text">
-										Retourner dans le temps, qui plus est au Moyen-Age, n’est pas chose courante !...<br>
- Nous avons essayé et c’est pourquoi, en liaison avec l’association Cébazat d’Hier et d’Autrefois, des adhérents ont profité de l’occasion pour aller visiter le château de Guédelon dans l’Yonne.<br>
- Construit suivant les méthodes de l’époque, cette initiative est très instructive grâce à l’implication des ouvriers des différents corps de métiers qui se sont fait un plaisir de répondre à toutes questions ;<br>
- leur technicité et leur professionnalisme sont exemplaires. Accompagnés par une guide très connaisseuse équipée d’audiophones facilitant l’écoute des visiteurs, notre groupe a côtoyé la grande Histoire de France et la vie dure et complexe  de l’époque.<br>
- Sous une météo favorable, notre groupe composé de 53 participants a été enthousiasmé par les récits et anecdotes narrés tout au long de cette promenade.<br>
- Mais déjà il a fallu revenir à la réalité du 21° siècle et retrouver les aléas et fatalités de la vie d’aujourd’hui.<br>
- Pour ceux qui ne connaissent pas, ce site est fabuleux et une découverte est absolument nécessaire.      
-   									   </p><br>
-
-										
-		  <a href="../diaporama/2024/guedelon/index.html" class="btn btn-success">Diaporama</a>
-                                     
-									 
-									  
-									  
-					
-								  </div><!--  fin de la card-body  -->
-							  	</div>   <!--  fin de la card  -->
-							 </div>     <!--  class="row align-items-center   -->
-	</article>	<!-- Fin de Le château de Guédelon avril 2024   -->		
-					
-					
-                    
-					
-					
-					
-					
-					
-					<article>	<!-- Randonnée St Eloy les Mines mars 2024    -->				  
-					 	 <div class="row align-items-center">   
-								<div class="card w-100 mb-5 mt-5"     >
-								  <div class="card-body">
-										 
-				 <h3 class="card-title"><a name="steeloy" id="steloy"></a>Randonnée St Eloy les Mines mars 2024   </h3>
-													
-				<a href="#" ><img src="../diaporama/2024/st_eloy/images/fulls/miniature.jpg" alt="steloy" class="rounded float-lg-left mr-3 "      onClick="MM_openBrWindow('../diaporama/2024/st_eloy/images/fulls/01.jpg','','');MM_openBrWindow
-					('../diaporama/2024/st_eloy/images/fulls/01.jpg','','')"></a>
-										
-									<p class="card-text">
-										Comment chercher un endroit insolite et peu connu ? <br>
-Pour trouver, il faut beaucoup fouiner dans des lieux éloignés de la capitale auvergnate et des tumultes des grandes métropoles.<br>
- En regardant Google Mapps, on peut découvrir une petite localité située à la porte du département du Puy de Dôme et dont la renommée est quelque peu altérée par une activité économique en déclin.<br>
- Après quelques prospections et vérifications, nous optons de mettre le cap sur… St Eloy les Mines.<br>
- Cette cité, anciennement minière, a gardé quelques vestiges de son glorieux passé industriel et nous voici donc partis à la visite du musée qui retrace les moments tristes et joyeux de l’extraction du charbon des années 1960.<br>
- Certes, ce n’était pas Germinal mais le travail était particulièrement dur et après cette découverte très enrichissante, nous nous sommes dirigés vers le plan d’eau situé à l’entrée de cette ville : nous avons effectué une promenade des plus agréables au bord de ce lac artificiel où les reflets du soleil sont venus éclairer une nature particulièrement luxuriante et exubérante.<br>
- Il fallait reprendre des forces et nous nous sommes alors retrouvés au restaurant où l’abondance des plats et leur qualité ont surpris bon nombre de convives.<br>
- Et que dire du dessert : servi sous forme de vacherin en forme de boite de chocolat, tout le monde a été étonné par cette présentation hors du commun.<br>
- Une brève flânerie s’imposa avant de reprendre la route et rejoindre notre lotissement.<br>
- Expérience à renouveler.
-   									   </p><br>
-
-										
-		  <a href="../diaporama/2024/st_eloy/index.html" class="btn btn-success">Diaporama_1</a>
-                                      <a href="../diaporama/2024/st-eloy-bis/index.html" class="btn btn-success">Diaporama_2</a>
-									 
-									  
-									  
-					
-								  </div><!--  fin de la card-body  -->
-							  	</div>   <!--  fin de la card  -->
-							 </div>     <!--  class="row align-items-center   -->
-	</article>	<!-- Randonnée St Eloy les Mines mars 2024   -->		
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-		
-					
-					
-					
+				  <div class="container">
+						   	 <div   class=    "mb-5"> 
+								<div   class="text-center"   > 
+									<h1>Les bons plans du C.A.V.A.</h1>
+                                    <h4>Vous avez un plombier formidable, vous connaissez un super restaurant, vous avez des plants de tomates à donner, des compétences à partager, des loisirs à conseiller, 
+                  des professionnels de confiance à recommander :<br /> 
+                  <strong>les bons plans du C.A.V.A.</strong> vous proposent ces bonnes adresses pour vous  faciliter la   vie au quotidien.<br /> 
+                  Les recommandations et bons plans proposés ne sauraient en aucun cas engager la responsabilité de notre association.</h4>
+								</div>	
+						     </div>
+					  
+					  
+					  
+	 <div class="row">    <!--  debut Les sites Web -->
+    			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                    <article>						    
+                         <div class="col d-flex justify-content-center">  <!--  centrage card par rapport a la colonne  -->
+                                <div class="mb-5 mt-5">
+                                    <div class="card"  style="width: 18rem;" >
+                                                <div class="card-body">
+                                                      <h5 class="card-title">Les sites Web</h5>
+                                                            <div class="list-group">
+                                                                <a href="liens.html#cebazat" class="list-group-item-mine list-group-item-action"> La ville de Cébazat  </a>
+                                                                <a href="liens.html#michelin" class="list-group-item-mine list-group-item-action"> Le musée officiel du groupe Michelin</a>
+                                                                <a href="liens.html#jonas" class="list-group-item-mine list-group-item-action"> Le site troglodyte de Jonas</a>
+                                                                 <a href="liens.html#guedelon" class="list-group-item-mine list-group-item-action"> Le château de Guédelon</a>
+                                                                 <a href="liens.html#saints" class="list-group-item-mine list-group-item-action"> La vallée des saints</a>
+                                                                 <a href="liens.html#randol" class="list-group-item-mine list-group-item-action"> L'Abbaye Notre-Dame de Randol</a>
+                                                                 <a href="liens.html#puydufou" class="list-group-item-mine list-group-item-action"> Puy du Fou</a>
+                                                                 <a href="liens.html#maquette_club_chateaugay" class="list-group-item-mine list-group-item-action"> Maquette Club de Châteaugay</a>
+                                                            </div>
+                                                </div>
+                                    </div><!--fin de la class="card"-->
+                                </div>		 	
+                        </div>  <!-- fin de  centrage card par rapport a la colonne  -->	
+                    </article>	
+				</div>   <!--  fin de class="col-xs-12 col-sm-12 col-md-6 col-lg-6   -->
+		</div>	 <!--   fin de la   Les sites Web   -->
+					  
 					
 					  
-
-			</div>    <!-- class="col-xs-12 col-sm-12 col-md-9 col-lg-9   -->
-				</div>
+		 
+					  
+			<!--  debut  rangee pour la barre horizontale  -->		  
+					  <div class="row">    
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+					    <hr>
+						  </div>
+					  </div>
+			<!--  fin de   rangee pour la barre horizontale  -->	
+					  
+					  
+					  
+					  
+					  
+			
+					  	
+					  
+					  
+					     
+					
+					  
+					
+					  			  
+					  
+					  
+</div>
+						
+						
+						
+						
+						
+						
 					</div>
+				</div>
+			</div> 
+		
+		</div>   <!--fin   du container  secondaire  membres-->
+				 
+	
+		
 		
 		
 	<!-- debut du pied de page -->
@@ -429,11 +326,11 @@ Pour trouver, il faut beaucoup fouiner dans des lieux éloignés de la capitale 
 		  
         <div class="col"   style="background-color: #e6ffe1;" >
           <ul class="list-inline text-center">
-            <li class="list-inline-item"><a href="formail2.html">Contact</a></li>
+            <li class="list-inline-item"><a href="html/formail2.html">Contact</a></li>
             <li class="list-inline-item">&middot;</li>
-            <li class="list-inline-item"><a href="mentions-legales.html">Mentions légales</a></li>
+            <li class="list-inline-item"><a href="html/mentions-legales.html">Mentions légales</a></li>
             <li class="list-inline-item">&middot;</li>
-            <li class="list-inline-item"><a href="plan_du_site.html">Plan du site</a></li>
+            <li class="list-inline-item"><a href="html/plan_du_site.html">Plan du site</a></li>
           </ul>
 			<div align="center">© 2009 Comité d'Animation des Vergers d'Aubeterre </div>
 		  </div>
