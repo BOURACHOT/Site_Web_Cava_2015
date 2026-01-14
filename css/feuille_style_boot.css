@@ -53,7 +53,7 @@ body {
 
 .card-header{
 	background-color: #e6ffe1;  /*  coloration verte des card  */
-	
+	font-weight: bold;
 }
 
 
