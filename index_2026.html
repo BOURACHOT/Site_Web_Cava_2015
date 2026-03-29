@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="shortcut icon" href="images/generique/icone_pomme.ico" />
+    <link rel="apple-touch-icon" href="images/generique/icone_pomme.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link href="css/feuille_style_boot.css" rel="stylesheet" type="text/css">
+    <title>Le Comité d'animation des Vergers d'Aubeterre</title>
+
+    <script type="text/javascript">
+        function MM_openBrWindow(theURL, winName, features) { //v2.0
+            window.open(theURL, winName, features);
+        }
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr;
+            for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0,
+                x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+    </script>
+
+    <style type="text/css">
+        p.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 8.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+        /* Style pour simuler l'ancien jumbotron */
+        .jumbotron-custom {
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            background-color: #e9ecef;
+            border-radius: .3rem;
+        }
+    </style>
+</head>
+
+<body onLoad="MM_preloadImages('images/navigation_2015/bon_plan_survole.png','images/navigation_2015/membres_survole.png','images/navigation_2015/le_cava_survole.png','images/navigation_2015/presse_survole.png','images/navigation_2015/reportage_survole.png','images/navigation_2015/prets_survole.png')">
+
+    <div class="container-fluid p-0">
+        <div class="bg-dark">
+            <nav class="navbar navbar-expand-lg" style="background-color: #e6ffe1;">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="html/membres.html">Membres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="html/le_cava.html">Le CAVA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="html/presse.html">Presse</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Reportages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="html/reportage_2026.html">2026</a></li>
+                                    <li><a class="dropdown-item" href="html/reportage_2025.html">2025</a></li>
+                                    <li><a class="dropdown-item" href="html/reportage_2024.html">2024</a></li>
+                                    <li><a class="dropdown-item" href="html/reportage_2023.html">2023</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="html/reportage.html">Les reportages</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="html/pretdivers.html">Prêts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="html/bons_plans_accueil.html">Bons Plans</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row m-0">
+            <div class="col-12 p-0">
+                <div class="jumbotron-custom text-center">
+                    <div class="fond">
+                        <img class="img-fluid" src="images/Banniere/banniere-cava-010.jpg" alt="banniere">
+                        <h4 class="mt-3"> Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-3 d-none d-md-block">
+                <div class="text-center mt-5">
+                    <img src="images/accueil/medaille-100p.jpg" alt="medaille" class="img-fluid">
+                </div>
+
+                <div class="text-center mt-5">
+                    <img src="images/navigation_2015/accueil_survole.png" alt="accueil" width="150" height="50" />
+                </div>
+
+                <div class="text-center mt-3">
+                    <a href="html/membres.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('membres','','images/navigation_2015/membres_survole.png',1)">
+                        <img src="images/navigation_2015/membres.png" alt="les membres du CAVA" name="membres" width="150" height="50" id="membres" />
+                    </a>
+                </div>
+
+                <div class="text-center mt-3">
+                    <a href="html/le_cava.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('lecava','','images/navigation_2015/le_cava_survole.png',1)">
+                        <img src="images/navigation_2015/le_cava.png" alt="Historique du CAVA" name="lecava" width="150" height="50" id="lecava" />
+                    </a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="html/formail2.html"><img src="images/generique/logo_email_002.gif" alt="email" width="96" height="67" /></a>
+                    <br>
+                    <a href="html/formail2.html" class="btn btn-link">nous contacter</a>
+                </div>
+
+                <div class="text-center mt-5">
+                    <div id="cont_dc300da484c3afa999fd392c66f8590d">
+                        <script type="text/javascript" async src="https://www.tameteo.com/wid_loader/dc300da484c3afa999fd392c66f8590d"></script>
+                    </div>
+                </div>
+
+                <article class="text-center mt-4">
+                    Mise à jour : <br /> 03/02/2026
+                </article>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="puce_perso">
+                    <h1 class="mb-5">Agenda</h1>
+                    
+                    
+                    
+                     <article>
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white"> samedi 18 avril 2026 à 13h30 </div>
+                            <img src="images/accueil/images_agenda/carnaval_2026.jpg" alt="carnaval" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Cébazat fête le printemps</h5>
+                                <p class="card-text small">
+                                    Chers adhérents, <br>
+                                     Destination : La Lune !
+
+Cette année pour le carnaval organisé par la ville de Cébazat, notre association voit grand... très grand !<br>
+ Nous suivons les traces d'un héros de BD légendaire et de son inséparable ami canin.
+
+Pas de nom, mais des indices : une houpette reconnaissable entre mille, un pull bleu, et une fusée iconique qui a marqué des générations de lecteurs.<br>
+ Venez découvrir notre char et nos costumes "intergalactiques" !<br>
+
+
+"On marche sur la lune !"... et on compte sur vous pour défiler à nos côtés ! 
+                                    
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    
+                    
+                    <article>
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white"> vendredi 1<sup>er</sup> mai 2026 </div>
+                            <img src="images/accueil/images_agenda/salon-vintage-034.jpg" alt="salon_vintage" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Salon Vintage</h5>
+                                <p class="card-text small">
+                                    Chers adhérents, <br><br>
+                                    Nous vous invitons à participer à notre Salon Vintage (Toutes Collections). Un moment convivial riche en découvertes.
+                                </p>
+                                <a href="https://fb.me/e/fJkYA4cSs"><img src="images/accueil/images_agenda/facebook.png" class="img-fluid" alt="salon vintage" /></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5">
+                <h1 class="mb-5">Nos dernières activités</h1>
+
+                <article class="card mb-4 shadow-sm">
+                    <a href="#" onclick="MM_openBrWindow('images/accueil/images_reportages/ag_2026.jpg','','')">
+                        <img src="images/accueil/images_reportages/ag_2026.jpg" alt="ag" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Assemblée générale 2026</h5>
+                        <p class="card-text">Notre assemblée générale fut l’occasion de faire le point sur l’année 2025...</p>
+                        <a href="html/reportage_2026.html#ag" class="btn btn-success">Suite et Photos</a>
+                    </div>
+                </article>
+
+                <article class="card mb-4 shadow-sm">
+                    <a href="#" onclick="MM_openBrWindow('images/accueil/images_reportages/galette_2026.jpg','','')">
+                        <img src="images/accueil/images_reportages/galette_2026.jpg" alt="galette" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">La galette des Rois 2026</h5>
+                        <p class="card-text">Un moment d’amitié et de convivialité entre voisins à la salle Prugnard.</p>
+                        <a href="html/reportage_2026.html#galette" class="btn btn-success">Suite et Photos</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid mt-5">
+        <div class="bg-light border-top py-4">
+            <div class="row text-center">
+                <div class="col-12" style="background-color: #e6ffe1;">
+                    <ul class="list-inline mb-1">
+                        <li class="list-inline-item"><a href="html/formail2.html" class="text-decoration-none text-dark">Contact</a></li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item"><a href="html/mentions-legales.html" class="text-decoration-none text-dark">Mentions légales</a></li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item"><a href="html/plan_du_site.html" class="text-decoration-none text-dark">Plan du site</a></li>
+                    </ul>
+                    <div class="small">© 2009-2026 Comité d'Animation des Vergers d'Aubeterre</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
